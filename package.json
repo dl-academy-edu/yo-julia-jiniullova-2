@@ -1,9 +1,9 @@
 {
-  "name": "dl-academy-markup-template",
+  "name": "Julia Diniullova",
   "version": "1.0.0",
   "private": true,
-  "description": "Markup template",
-  "author": "DirectLine Development",
+  "description": "Stady",
+  "author": "Yan Olimov",
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp build",
