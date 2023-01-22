@@ -1,0 +1,143 @@
+.category {
+  margin-top: 60px;
+  margin-bottom: 55px;
+}
+
+.category__title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin-bottom: 15px;
+}
+
+.category__path {
+  display: flex;
+  gap: 49px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.category__subtitle {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1E0606;
+  cursor: pointer;
+}
+
+.category__active {
+  opacity: 0.5;
+}
+
+.category__vector::after {
+  content: url(/img/icon/vector.svg);
+  position: absolute;
+  left: 62px;
+}
+
+.category__products-list {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 23px;
+  flex-wrap: wrap;
+}
+
+.category__products-list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.category__products-list-item-img {
+  background-color: #DBE4DB;
+}
+
+.category__products-list-item:nth-child(4) {
+  margin-left: 200px;
+}
+
+.category__products-list-item-text {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: absolute;
+  top: 103px;
+}
+
+.category__products-list-item-text:hover,
+.category__products-list-item-text:active {
+  text-decoration-line: underline;
+}
+
+.text-apparel {
+  left: 75px;
+  width: 129px;
+}
+
+.text-holiday {
+  left: 62px;
+  width: 155px;
+}
+
+.text-toys {
+  top: 119px;
+  left: 104px;
+}
+
+.text-accessories {
+  left: 44px;
+  top: 119px;
+}
+
+.text-sale {
+  top: 119px;
+  left: 105px;
+}
+
+.text-adults {
+  width: 155px;
+  left: 62px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.description__title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 200px;
+}
+
+.description__subtitle {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  margin-left: 200px;
+  max-width: 680px;
+}
+
+.footer {
+  margin-top: 55px;
+}
