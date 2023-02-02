@@ -15,6 +15,8 @@
 /*
   Import all other blocks
 */
+
+@import "fonts";
 @import "_blocks/container";
 @import "_blocks/footer";
 @import "blog";
@@ -282,7 +284,7 @@
     }
   }
 
-  &__subtitle {
+  &__description {
     width: 580px;
     font-family: 'Open Sans';
     font-weight: 400;
