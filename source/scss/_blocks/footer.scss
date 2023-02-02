@@ -1,4 +1,195 @@
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-*/
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #434343;
 
+  &__wrapper {
+    display: flex;
+  }
+
+  &__navigation,
+  &__information {
+    margin-right: 20px;
+  }
+
+  &__title {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+
+    &--border {
+      border-bottom: 1px solid $color-gray;
+      padding-bottom: 23px;
+      margin-bottom: 28px;
+      width: 380px;
+    }
+  }
+
+  &-item__link {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__item {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-white;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+    &--transparent {
+      color: #A2A2A2;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    &--circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: $color-gray;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &--margin:nth-child(1) {
+      margin-right: 150px;
+    }
+
+    &--margin:nth-child(2) {
+      margin-right: 109px;
+    }
+  }
+
+  &__email {
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    width: 299px;
+    height: 40px;
+    border: 0;
+    background-color: $color-gray;
+    padding-left: 15px;
+    cursor: pointer;
+
+    &::placeholder {
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #EBEBEB;
+    }
+
+    &:hover,
+    &:active {
+      height: 38px;
+      border: 1px solid #FFFDFD;
+      border-right: none;
+    }
+  }
+
+  &__button {
+    padding: 9px 22px;
+    background: #000000;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    border: 0;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+      background: $color-brown;
+    }
+
+    &:active {
+      background: #CFAF91;
+    }
+  }
+
+  &__list--flex {
+    display: flex;
+  }
+
+  &__bottom {
+    border-top: 1px solid $color-gray;
+    padding-top: 23px;
+    margin-top: 13px;
+  }
+
+  &__rating {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+
+    &:hover,
+    &:active {
+      color: $color-brown;
+    }
+  }
+
+  &__rating-area {
+    overflow: hidden;
+    height: 17px;
+    margin-left: 28px;
+
+    &:not(:checked) > input {
+      display: none;
+    }
+
+    &:not(:checked) > label {
+      float: right;
+      width: 14px;
+      height: 21.6px;
+      margin-right: 6px;
+      cursor: pointer;
+    }
+
+    &:not(:checked) > label:before {
+      content: url(/img/icon/star.svg);
+    }
+
+    &> input:checked ~ label {
+      content: url(/img/icon/cleek_star.svg);
+    }
+
+    &:not(:checked) > label:hover,
+    &:not(:checked) > label:hover ~ label {
+      content: url(/img/icon/guidance_star.svg);
+    }
+
+    &> input:checked + label:hover,
+    & > input:checked + label:hover ~ label,
+    & > input:checked ~ label:hover,
+    & > input:checked ~ label:hover ~ label,
+    & > label:hover ~ input:checked ~ label {
+      content: url(/img/icon/guidance_star.svg);
+    }
+  }
+}

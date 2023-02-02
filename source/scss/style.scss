@@ -19,10 +19,12 @@
 @import "fonts";
 @import "_blocks/container";
 @import "_blocks/footer";
+@import "_blocks/header";
 @import "blog";
 @import "contact";
 @import "catalog";
 @import "toys";
+
 
 /*
   Ниже пример подключения других блоков
@@ -398,8 +400,6 @@
       margin: 0;
     }
   }
-
-
 }
 
 .wrapper {
