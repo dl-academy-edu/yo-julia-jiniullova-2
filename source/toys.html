@@ -95,54 +95,36 @@
             <h2 class="toys__title">Toy for kids</h2>
             <div class="toys__catalog">
                 <ul class="toys__list undotted">
-                    <li class="toys__item">
-                        <img src="/img/pillow.jpg" alt="pillow" width="380" height="385" class="toys__img">
-                        <p class="toys__desc">SHARKY BEAN BAG CHAIR COVER</p>
-                        <p class="toys__price">$60.00 USD</p>
-                        <div class="toys__block">
-                            <p class="toys__block--hover">LEARN MORE</p>
-                        </div>
-                    </li>
-                    <li class="toys__item">
-                        <img src="/img/frames.jpg" alt="frames" width="380" height="385" class="toys__img">
-                        <p class="toys__desc">BRASS DECO FRAMES</p>
-                        <p class="toys__price">$66.00 USD</p>
-                        <div class="toys__block">
-                            <p class="toys__block--hover">LEARN MORE</p>
-                        </div>
-                    </li>
-                    <li class="toys__item">
-                        <img src="/img/apron.jpg" alt="apron" width="380" height="385" class="toys__img">
-                        <p class="toys__desc">CIBO FULL APRON</p>
-                        <p class="toys__price">$60.00 USD</p>
-                        <div class="toys__block">
-                            <p class="toys__block--hover">LEARN MORE</p>
-                        </div>
-                    </li>
-                    <li class="toys__item">
-                        <img src="/img/machine.jpg" alt="machine" width="380" height="385" class="toys__img">
-                        <p class="toys__desc">GATCHA GATCHA GUMBALL MACHINE</p>
-                        <p class="toys__price">$56.00 USD</p>
-                        <div class="toys__block--two">
-                            <p class="toys__block--hover">LEARN MORE</p>
-                        </div>
-                    </li>
-                    <li class="toys__item">
-                        <img src="/img/candle.jpg" alt="candle" width="380" height="385" class="toys__img">
-                        <p class="toys__desc">CHRISTMAS ADVENT SCENTED CANDLE</p>
-                        <p class="toys__price">$29.00 USD</p>
-                        <div class="toys__block--two">
-                            <p class="toys__block--hover">LEARN MORE</p>
-                        </div>
-                    </li>
-                    <li class="toys__item">
-                        <img src="/img/lamp.jpg" alt="lamp" width="380" height="385" class="toys__img">
-                        <p class="toys__desc">TANGLE SPINNING TEA LIGHT</p>
-                        <p class="toys__price">$56.00 USD</p>
-                        <div class="toys__block--two">
-                            <p class="toys__block--hover">LEARN MORE</p>
-                        </div>
-                    </li>
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/pillow.jpg",
+                    "desc": "SHARKY BEAN BAG CHAIR COVER",
+                    "price": "$60.00 USD"
+                  })
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/frames.jpg",
+                    "desc": "BRASS DECO FRAMES",
+                    "price": "$66.00 USD"
+                  })
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/apron.jpg",
+                    "desc": "CIBO FULL APRON",
+                    "price": "$60.00 USD"
+                  })
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/machine.jpg",
+                    "desc": "GATCHA GATCHA GUMBALL MACHINE",
+                    "price": "$56.00 USD"
+                  })
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/candle.jpg",
+                    "desc": "CHRISTMAS ADVENT SCENTED CANDLE",
+                    "price": "$29.00 USD"
+                  })
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/lamp.jpg",
+                    "desc": "TANGLE SPINNING TEA LIGHT",
+                    "price": "$56.00 USD"
+                  })
                 </ul>
             </div>
             <div class="toys__pages">
