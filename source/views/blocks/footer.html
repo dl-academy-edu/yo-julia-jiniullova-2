@@ -54,7 +54,9 @@
           <p class="footer__title footer__title--border">Connect</p>
           <div class="footer__email">
               <input type="text" name="text" placeholder="Email" class="footer__input">
-              <button class="footer__button">Join</button>
+              @@include('blocks/button.html', {
+                "text": "Join"
+              })
           </div>
           <ul class="footer__list footer__list--flex undotted">
               <li class="footer__item footer__item--circle">

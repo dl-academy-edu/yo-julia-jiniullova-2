@@ -1,0 +1,19 @@
+.link {
+  padding: 9px 22px;
+  background: #000000;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $color-white;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-brown;
+  }
+
+  &:active{
+    background: #CFAF91;
+  }
+}

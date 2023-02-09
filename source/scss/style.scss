@@ -22,6 +22,7 @@
 @import "_blocks/header";
 @import "_blocks/path";
 @import "_blocks/button";
+@import "_blocks/link";
 @import "blog";
 @import "contact";
 @import "catalog";
@@ -332,26 +333,6 @@
 
     &--margin {
       margin-bottom: 35px;
-    }
-  }
-
-  &__link {
-    padding: 9px 22px;
-    background: #000000;
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: $color-white;
-    cursor: pointer;
-
-    &:hover {
-      background: $color-brown;
-    }
-
-    &:active{
-      background: #CFAF91;
     }
   }
 }
