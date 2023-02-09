@@ -27,133 +27,133 @@
         <section class="kids container">
             <h1 class="kids__title">Toy for kids</h1>
             <div class="kids__path">
-                <p class="kids__subtitle kids__vector-home">Home</p>
-                <p class="kids__subtitle kids__vector-catalog">Catalog</p>
-                <p class="kids__subtitle kids__active">Toys</p>
+                <p class="kids__subtitle kids__subtitle--home">Home</p>
+                <p class="kids__subtitle kids__subtitle--catalog">Catalog</p>
+                <p class="kids__subtitle kids__subtitle--active">Toys</p>
             </div>
         </section>
         <section class="filter">
             <h2 class="filter__title">Filter</h2>
             <div class="filter__wrapper container">
-                <div class="filter__cost">
-                    <label class="filter__cost-label">Cost</label>
-                    <div class="filtet__cost-wrapper">
-                        <input type="range" min="0" max="500" value="100" class="filter__cost-input">
+                <div class="cost">
+                    <label class="cost__label">Cost</label>
+                    <div class="cost__wrapper">
+                        <input type="range" min="0" max="500" value="100" class="cost__input">
                     </div>
-                    <div class="filter__cost-numbers">
-                        <span class="filter__cost-num">0</span>
-                        <span class="filter__cost-num">500</span>
+                    <div class="cost__numbers">
+                        <span class="cost__num">0</span>
+                        <span class="cost__num">500</span>
                     </div>
                 </div>
-                <div class="filter__color">
-                    <fieldset class="filter__color-fieldset">
-                        <p class="filter__color-title">Color</p>
-                            <input type="checkbox" id="black" checked class="filter__color-input">
-                            <label for="black" class="filter__color-label">Black</label>
-                            <input type="checkbox" id="blue" class="filter__color-input">
-                            <label for="blue" class="filter__color-label">Blue</label>
-                            <input type="checkbox" id="green" class="filter__color-input">
-                            <label for="green" class="filter__color-label">Green</label>
-                            <input type="checkbox" id="white" class="filter__color-input">
-                            <label for="white" class="filter__color-label">White</label>
+                <div class="color">
+                    <fieldset class="color__fieldset">
+                        <p class="color__title">Color</p>
+                            <input type="checkbox" id="black" checked class="color__input">
+                            <label for="black" class="color__label">Black</label>
+                            <input type="checkbox" id="blue" class="color__input">
+                            <label for="blue" class="color__label">Blue</label>
+                            <input type="checkbox" id="green" class="color__input">
+                            <label for="green" class="color__label">Green</label>
+                            <input type="checkbox" id="white" class="color__input">
+                            <label for="white" class="color__label">White</label>
                     </fieldset>
                 </div>
                 <div class="filter__delivery">
-                    <fieldset class="filter__delivery-fieldset">
+                    <fieldset class="delivery__fieldset">
                         <p class="filter__delivery-title">Delivery</p>
-                        <input type="radio" name="radio__delivery" id="free-shipping" class="filter__delivery-input">
-                        <label for="free-shipping" class="filter__delivery-label">Free shipping</label>
-                        <input type="radio" name="radio__delivery" id="fast-shipping" checked class="filter__delivery-input">
-                        <label for="fast-shipping" class="filter__delivery-label">Fast shipping</label>
+                        <input type="radio" name="radio__delivery" id="free-shipping" class="delivery__input">
+                        <label for="free-shipping" class="delivery__label">Free shipping</label>
+                        <input type="radio" name="radio__delivery" id="fast-shipping" checked class="delivery__input">
+                        <label for="fast-shipping" class="delivery__label">Fast shipping</label>
                     </fieldset>
                 </div>
-                <div class="filter__amount">
-                    <fieldset class="filter__amount-fieldset">
-                        <p class="filter__amount-title">Amount</p>
-                        <div class="filter__amount-wrapper">
-                            <div class="filter__amount-item">
-                                <input type="radio" id="0-5" name="radio__amount" checked class="filter__amount-input">
-                                <label for="0-5" class="filter__amount-label">0-5</label>
+                <div class="amount">
+                    <fieldset class="amount__fieldset">
+                        <p class="amount__title">Amount</p>
+                        <div class="amount__wrapper">
+                            <div class="amount__item">
+                                <input type="radio" id="0-5" name="radio__amount" checked class="amount__input">
+                                <label for="0-5" class="amount__label">0-5</label>
                             </div>
-                            <div class="filter__amount-item">
-                                <input type="radio" id="10-20" name="radio__amount" class="filter__amount-input">
-                                <label for="10-20" class="filter__amount-label">10-20</label>
+                            <div class="amount__item">
+                                <input type="radio" id="10-20" name="radio__amount" class="amount__input">
+                                <label for="10-20" class="amount__label">10-20</label>
                             </div>
-                            <div class="filter__amount-item">
-                                <input type="radio" id="20-50" name="radio__amount" class="filter__amount-input">
-                                <label for="20-50" class="filter__amount-label">20-50</label>
+                            <div class="amount__item">
+                                <input type="radio" id="20-50" name="radio__amount" class="amount__input">
+                                <label for="20-50" class="amount__label">20-50</label>
                             </div>
                         </div>
                     </fieldset>
                 </div>
-                <div class="filter__apply">
-                    <button class="filter__apply-btn">Apply</button>
+                <div class="apply">
+                    <button class="apply__button">Apply</button>
                 </div>
             </div>
         </section>
         <section class="toys container">
             <h2 class="toys__title">Toy for kids</h2>
             <div class="toys__catalog">
-                <ul class="toys__catalog-list undotted">
-                    <li class="toys__catalog-list-item">
-                        <img src="/img/pillow.jpg" alt="pillow" width="380" height="385" class="toys__catalog-list-img">
-                        <p class="toys__catalog-list-desc">SHARKY BEAN BAG CHAIR COVER</p>
-                        <p class="toys__catalog-list-price">$60.00 USD</p>
-                        <div class="toys__catalog-block">
-                            <p class="toys__catalog-hover">LEARN MORE</p>
+                <ul class="toys__list undotted">
+                    <li class="toys__item">
+                        <img src="/img/pillow.jpg" alt="pillow" width="380" height="385" class="toys__img">
+                        <p class="toys__desc">SHARKY BEAN BAG CHAIR COVER</p>
+                        <p class="toys__price">$60.00 USD</p>
+                        <div class="toys__block">
+                            <p class="toys__block--hover">LEARN MORE</p>
                         </div>
                     </li>
-                    <li class="toys__catalog-list-item">
-                        <img src="/img/frames.jpg" alt="frames" width="380" height="385" class="toys__catalog-list-img">
-                        <p class="toys__catalog-list-desc">BRASS DECO FRAMES</p>
-                        <p class="toys__catalog-list-price">$66.00 USD</p>
-                        <div class="toys__catalog-block">
-                            <p class="toys__catalog-hover">LEARN MORE</p>
+                    <li class="toys__item">
+                        <img src="/img/frames.jpg" alt="frames" width="380" height="385" class="toys__img">
+                        <p class="toys__desc">BRASS DECO FRAMES</p>
+                        <p class="toys__price">$66.00 USD</p>
+                        <div class="toys__block">
+                            <p class="toys__block--hover">LEARN MORE</p>
                         </div>
                     </li>
-                    <li class="toys__catalog-list-item">
-                        <img src="/img/apron.jpg" alt="apron" width="380" height="385" class="toys__catalog-list-img">
-                        <p class="toys__catalog-list-desc">CIBO FULL APRON</p>
-                        <p class="toys__catalog-list-price">$60.00 USD</p>
-                        <div class="toys__catalog-block">
-                            <p class="toys__catalog-hover">LEARN MORE</p>
+                    <li class="toys__item">
+                        <img src="/img/apron.jpg" alt="apron" width="380" height="385" class="toys__img">
+                        <p class="toys__desc">CIBO FULL APRON</p>
+                        <p class="toys__price">$60.00 USD</p>
+                        <div class="toys__block">
+                            <p class="toys__block--hover">LEARN MORE</p>
                         </div>
                     </li>
-                    <li class="toys__catalog-list-item">
-                        <img src="/img/machine.jpg" alt="machine" width="380" height="385" class="toys__catalog-list-img">
-                        <p class="toys__catalog-list-desc">GATCHA GATCHA GUMBALL MACHINE</p>
-                        <p class="toys__catalog-list-price">$56.00 USD</p>
-                        <div class="toys__catalog-block-two">
-                            <p class="toys__catalog-hover">LEARN MORE</p>
+                    <li class="toys__item">
+                        <img src="/img/machine.jpg" alt="machine" width="380" height="385" class="toys__img">
+                        <p class="toys__desc">GATCHA GATCHA GUMBALL MACHINE</p>
+                        <p class="toys__price">$56.00 USD</p>
+                        <div class="toys__block--two">
+                            <p class="toys__block--hover">LEARN MORE</p>
                         </div>
                     </li>
-                    <li class="toys__catalog-list-item">
-                        <img src="/img/candle.jpg" alt="candle" width="380" height="385" class="toys__catalog-list-img">
-                        <p class="toys__catalog-list-desc">CHRISTMAS ADVENT SCENTED CANDLE</p>
-                        <p class="toys__catalog-list-price">$29.00 USD</p>
-                        <div class="toys__catalog-block-two">
-                            <p class="toys__catalog-hover">LEARN MORE</p>
+                    <li class="toys__item">
+                        <img src="/img/candle.jpg" alt="candle" width="380" height="385" class="toys__img">
+                        <p class="toys__desc">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                        <p class="toys__price">$29.00 USD</p>
+                        <div class="toys__block--two">
+                            <p class="toys__block--hover">LEARN MORE</p>
                         </div>
                     </li>
-                    <li class="toys__catalog-list-item">
-                        <img src="/img/lamp.jpg" alt="lamp" width="380" height="385" class="toys__catalog-list-img">
-                        <p class="toys__catalog-list-desc">TANGLE SPINNING TEA LIGHT</p>
-                        <p class="toys__catalog-list-price">$56.00 USD</p>
-                        <div class="toys__catalog-block-two">
-                            <p class="toys__catalog-hover">LEARN MORE</p>
+                    <li class="toys__item">
+                        <img src="/img/lamp.jpg" alt="lamp" width="380" height="385" class="toys__img">
+                        <p class="toys__desc">TANGLE SPINNING TEA LIGHT</p>
+                        <p class="toys__price">$56.00 USD</p>
+                        <div class="toys__block--two">
+                            <p class="toys__block--hover">LEARN MORE</p>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="toys__pages">
-                <button class="toys__pages-btn-left"></button>
-                <div class="toys__pages-numbers">
-                    <button class="toys__pages-num num-active">1</button>
-                    <button class="toys__pages-num">2</button>
-                    <button class="toys__pages-num">3</button>
-                    <button class="toys__pages-num">4</button>
+                <button class="toys__btn--left"></button>
+                <div class="toys__numbers">
+                    <button class="toys__num toys__num--active">1</button>
+                    <button class="toys__num">2</button>
+                    <button class="toys__num">3</button>
+                    <button class="toys__num">4</button>
                 </div>
-                <button class="toys__pages-btn-right"></button>
+                <button class="toys__btn--right"></button>
             </div>
         </section>
     </main>
