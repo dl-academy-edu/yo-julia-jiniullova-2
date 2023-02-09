@@ -1,5 +1,6 @@
 .blog {
   margin-top: 60px;
+  margin-bottom: 60px;
 
   &__title {
     font-family: 'Montserrat';
@@ -61,77 +62,5 @@
     font-size: 18px;
     line-height: 25px;
     color: $color-text;
-  }
-
-  &__pages {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
-  }
-
-  &__button--left {
-    background-image: url(/img/icon/arrow_inaction.svg);
-    border: 0;
-    width: 18px;
-    height: 30px;
-    background-color: transparent;
-    cursor: pointer;
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-
-    &:hover {
-      background-image: url(/img/icon/arrow_hover.svg);
-    }
-
-    &:active {
-      background-image: url(/img/icon/arrow_active.svg);
-    }
-  }
-
-  &__button--right {
-    background-image: url(/img/icon/arrow_inaction.svg);
-    border: 0;
-    width: 18px;
-    height: 30px;
-    background-color: transparent;
-    cursor: pointer;
-    background-repeat: no-repeat;
-
-    &:hover {
-      background-image: url(/img/icon/arrow_hover.svg);
-    }
-
-    &:active {
-      background-image: url(/img/icon/arrow_active.svg);
-    }
-  }
-
-  &__numbers {
-    display: flex;
-    gap: 64px;
-  }
-
-  &__num {
-    border: 0;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $color-text;
-    background: none;
-    cursor: pointer;
-
-    &:hover {
-      color: #AAAAAA;
-    }
-
-    &:active {
-      color: $color-brown;
-    }
-
-    &--active {
-      color: $color-brown;
-    }
   }
 }

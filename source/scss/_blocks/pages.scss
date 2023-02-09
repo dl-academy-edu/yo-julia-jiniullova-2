@@ -1,0 +1,70 @@
+.pages {
+  display: flex;
+  justify-content: space-between;
+
+  &__btn--left {
+    background-image: url(/img/icon/arrow_inaction.svg);
+    border: 0;
+    width: 18px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url(/img/icon/arrow_hover.svg);
+    }
+
+    &:active {
+      background-image: url(/img/icon/arrow_active.svg);
+    }
+  }
+
+  &__btn--right {
+    background-image: url(/img/icon/arrow_inaction.svg);
+    border: 0;
+    width: 18px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url(/img/icon/arrow_hover.svg);
+    }
+
+    &:active {
+      background-image: url(/img/icon/arrow_active.svg);
+    }
+  }
+
+  &__numbers {
+    display: flex;
+    gap: 64px;
+  }
+
+  &__num {
+    border: 0;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #1E0606;
+    background: none;
+    cursor: pointer;
+
+    &:hover {
+      color: #AAAAAA;
+    }
+
+    &:active {
+      color: #C29974;
+    }
+
+    &--active {
+      color: #C29974;
+    }
+  }
+}
