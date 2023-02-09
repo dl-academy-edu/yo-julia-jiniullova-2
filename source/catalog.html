@@ -26,10 +26,10 @@
     <main>
         <section class="catalog container">
             <h1 class="catalog__title">catalog Products</h1>
-            <div class="catalog__path">
-                <p class="catalog__subtitle catalog__subtitle--arrow">Home</p>
-                <p class="catalog__subtitle catalog__subtitle--opacity">Catalog</p>
-            </div>
+            @@include('blocks/path.html', {
+              "text__one": "Home",
+              "text__two": "Catalog"
+            })
             <ul class="catalog__list undotted">
               @@include('blocks/category-list.html', {
                 "text": "APPAREL KIDS",

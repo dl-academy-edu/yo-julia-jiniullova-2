@@ -12,33 +12,6 @@
     margin-bottom: 15px;
   }
 
-  &__path {
-    display: flex;
-    gap: 49px;
-    position: relative;
-    margin-bottom: 50px;
-  }
-
-  &__subtitle {
-    font-family: 'Crimson Text';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: $color-text;
-    cursor: pointer;
-
-    &--opacity {
-      opacity: 0.5;
-    }
-
-    &--arrow::after {
-      content: url(/img/icon/vector.svg);
-      position: absolute;
-      left: 62px;
-    }
-  }
-
   &__list {
     display: flex;
     column-gap: 20px;

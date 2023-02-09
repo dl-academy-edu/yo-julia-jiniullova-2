@@ -26,10 +26,10 @@
     <main>
         <section class="blog container">
             <h1 class="blog__title">Blog</h1>
-            <div class="blog__path">
-                <p class="blog__subtitle blog__subtitle--arrow">Home</p>
-                <p class="blog__subtitle blog__subtitle--opacity">Blog</p>
-            </div>
+            @@include('blocks/path.html', {
+              "text__one": "Home",
+              "text__two": "Blog"
+            })
             <div class="blog__news">
                 <ul class="blog__list undotted">
                   @@include('blocks/blog-list.html', {

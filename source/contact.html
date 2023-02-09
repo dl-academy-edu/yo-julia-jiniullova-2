@@ -26,10 +26,10 @@
     <main>
         <section class="contact container">
             <h1 class="contact__title">Contact&ensp;Us</h1>
-            <div class="contact__path">
-                <p class="contact__subtitle contact__subtitle--arrow">Home</p>
-                <p class="contact__subtitle contact__subtitle--active">Contact Us</p>
-            </div>
+            @@include('blocks/path.html', {
+              "text__one": "Home",
+              "text__two": "Contact Us"
+            })
             <div class="contact__main">
                 @@include('blocks/modal.html')
                 <div class="contact__text">

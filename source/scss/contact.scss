@@ -12,32 +12,6 @@
     margin-bottom: 15px;
   }
 
-  &__path {
-    display: flex;
-    gap: 50px;
-    position: relative;
-    margin-bottom: 50px;
-  }
-
-  &__subtitle {
-    font-family: 'Crimson Text';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: #1E0606;
-
-    &--arrow::after {
-      content: url(/img/icon/vector.svg);
-      position: absolute;
-      left: 62px;
-    }
-
-    &--active {
-      opacity: 0.5;
-    }
-  }
-
   &__main {
     display: flex;
     gap: 120px;
