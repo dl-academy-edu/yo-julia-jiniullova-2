@@ -286,28 +286,6 @@
 
 .apply {
   margin-top: 37px;
-
-  &__button {
-    width: max-content;
-    background: #000000;
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    padding: 9px 22px;
-    border: 0;
-    cursor: pointer;
-
-    &:hover {
-      background: #C29974;
-    }
-
-    &:active {
-      background: #CFAF91;
-    }
-  }
 }
 
 .toys {

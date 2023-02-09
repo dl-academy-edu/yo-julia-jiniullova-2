@@ -98,28 +98,6 @@
     }
   }
 
-  &__button {
-    padding: 9px 22px;
-    background: #000000;
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    width: max-content;
-    border: 0;
-    cursor: pointer;
-
-    &:hover {
-      background: #C29974;
-    }
-
-    &:active {
-      background: #CFAF91;
-    }
-  }
-
   &__subtitle--normal {
     font-family: 'Open Sans';
     font-weight: 400;

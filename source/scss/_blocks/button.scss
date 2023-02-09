@@ -1,0 +1,22 @@
+.button {
+  width: max-content;
+  height: 40px;
+  background: #000000;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $color-white;
+  border: 0;
+  cursor: pointer;
+  padding: 9px 22px;
+
+  &:hover {
+    background: $color-brown;
+  }
+
+  &:active{
+    background: #CFAF91;
+  }
+}

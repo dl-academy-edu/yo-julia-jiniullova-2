@@ -22,6 +22,8 @@
               <input id="personal" type="checkbox" class="contact__checkbox" checked>
               <label for="personal" class="contact__label">By clicking on the button, you consent to the processing of your personal data</label>
           </div>
-          <button type="submit" class="contact__button">Submit</button>
+          @@include('blocks/button.html', {
+            "text": "Submit"
+          })
       </form>
 </div>
