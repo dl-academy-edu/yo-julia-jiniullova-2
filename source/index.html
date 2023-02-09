@@ -58,30 +58,34 @@
             <div class="category__products">
                 <h2 class="category__title">Category Products</h2>
                 <ul class="category__list undotted">
-                    <li class="category__item category__item--green">
-                        <a href="#" class="category-item__link">
-                            <p class="category-item__text category-item__text--apparel">APPAREL KIDS</p>
-                            <img src="./img/apparel_kids.png" alt="apparel kids" width="280" height="270" class="category-item__img">
-                        </a>
-                    </li>
-                    <li class="category__item category__item--brown">
-                        <a href="#" class="category-item__link">
-                            <p class="category-item__text category-item__text--holiday">HOLIDAY SHOP</p>
-                            <img src="./img/holiday_shop.png" alt="holiday shop" width="280" height="270" class="category-item__img">
-                        </a>
-                    </li>
-                    <li class="category__item category__item--beige">
-                        <a href="#" class="category-item__link">
-                            <p class="category-item__text category-item__text--toys">TOYS</p>
-                            <img src="./img/toys.png" alt="toys" width="280" height="270" class="category-item__img">
-                        </a>
-                    </li>
-                    <li class="category__item category__item--blue">
-                        <a href="#" class="category-item__link category-item__text--accessories">
-                            <p class="category-item__text text-accessories">ACCESSORIES</p>
-                            <img src="./img/accessories.png" alt="accessories" width="280" height="270" class="category-item__img">
-                        </a>
-                    </li>
+                  @@include('blocks/category-list.html', {
+                    "text": "APPAREL KIDS",
+                    "img": "./img/apparel_kids.png",
+                    "color": "category__item--green",
+                    "padding": "category-item__text--apparel",
+                    "href": "#"
+                  })
+                  @@include('blocks/category-list.html', {
+                    "text": "HOLIDAY SHOP",
+                    "img": "./img/holiday_shop.png",
+                    "color": "category__item--brown",
+                    "padding": "category-item__text--holiday",
+                    "href": "#"
+                  })
+                  @@include('blocks/category-list.html', {
+                    "text": "TOYS",
+                    "img": "./img/toys.png",
+                    "color": "category__item--beige",
+                    "padding": "category-item__text--toys",
+                    "href": "toys.html"
+                  })
+                  @@include('blocks/category-list.html', {
+                    "text": "ACCESSORIES",
+                    "img": "./img/accessories.png",
+                    "color": "category__item--blue",
+                    "padding": "category-item__text--accessories",
+                    "href": "#"
+                  })
                 </ul>
             </div>
             <div class="category__switch">

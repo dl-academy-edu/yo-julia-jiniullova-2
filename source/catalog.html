@@ -31,42 +31,49 @@
                 <p class="catalog__subtitle catalog__subtitle--opacity">Catalog</p>
             </div>
             <ul class="catalog__list undotted">
-                <li class="catalog__item">
-                    <a href="#" class="catalog__link">
-                        <p class="catalog__text catalog__text--apparel">APPAREL KIDS</p>
-                        <img src="/img/apparel_kids.png" alt="apparel kids" width="280" height="270" class="catalog__img">
-                    </a>
-                </li>
-                <li class="catalog__item">
-                    <a href="#" class="catalog__link">
-                        <p class="catalog__text catalog__text--holiday">HOLIDAY SHOP</p>
-                        <img src="/img/holiday_shop.png" alt="holiday shop" width="280" height="270" class="catalog__img">
-                    </a>
-                </li>
-                <li class="catalog__item">
-                    <a href="toys.html" class="catalog__link">
-                        <p class="catalog__text catalog__text--toys">TOYS</p>
-                        <img src="/img/toys.png" alt="toys" width="280" height="270" class="catalog__img">
-                    </a>
-                </li>
-                <li class="catalog__item catalog__item--margin">
-                    <a href="#" class="catalog__link">
-                        <p class="catalog__text catalog__text--accessories">ACCESSORIES</p>
-                        <img src="/img/accessories.png" alt="accessories" width="280" height="270" class="catalog__img">
-                    </a>
-                </li>
-                <li class="catalog__item">
-                    <a href="#" class="catalog__link">
-                        <p class="catalog__text catalog__text--sale">SALE</p>
-                        <img src="/img/sale.png" alt="sale" width="280" height="270" class="catalog__img">
-                    </a>
-                </li>
-                <li class="catalog__item">
-                    <a href="#" class="catalog__link">
-                        <p class="catalog__text catalog__text--adults">APPAREL ADULTS</p>
-                        <img src="/img/apparel_adults.png" alt="apparel adults" width="280" height="270" class="catalog__img">
-                    </a>
-                </li>
+              @@include('blocks/category-list.html', {
+                "text": "APPAREL KIDS",
+                "img": "./img/apparel_kids.png",
+                "color": "category__item--green",
+                "padding": "category-item__text--apparel",
+                "href": "#"
+              })
+              @@include('blocks/category-list.html', {
+                "text": "HOLIDAY SHOP",
+                "img": "./img/holiday_shop.png",
+                "color": "category__item--brown",
+                "padding": "category-item__text--holiday",
+                "href": "#"
+              })
+              @@include('blocks/category-list.html', {
+                "text": "TOYS",
+                "img": "./img/toys.png",
+                "color": "category__item--beige",
+                "padding": "category-item__text--toys",
+                "href": "toys.html"
+              })
+              @@include('blocks/category-list.html', {
+                "text": "ACCESSORIES",
+                "img": "./img/accessories.png",
+                "color": "category__item--blue",
+                "padding": "category-item__text--accessories",
+                "href": "#",
+                "margin": "catalog__item--margin"
+              })
+              @@include('blocks/category-list.html', {
+                "text": "SALE",
+                "img": "./img/sale.png",
+                "color": "category__item--beige",
+                "padding": "catalog__text--sale",
+                "href": "#"
+              })
+              @@include('blocks/category-list.html', {
+                "text": "APPAREL ADULTS",
+                "img": "/img/apparel_adults.png",
+                "color": "category__item--beige",
+                "padding": "catalog__text--adults",
+                "href": "#"
+              })
             </ul>
         </section>
         <section class="description container">
