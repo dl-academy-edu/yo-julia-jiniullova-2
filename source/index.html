@@ -144,38 +144,10 @@
     @@include('blocks/footer.html')
     <div class="modal">
         <div class="modal__overlay"></div>
-        <div class="contact__main">
-            <div class="contact__main-wrapper">
-                <form method="post" action="#" class="contact__main-form">
-                    <div class="input__wrapper">
-                        <label for="name" class="contact__main-label">Name</label>
-                        <input type="text" id="name" placeholder="Ivan Ivanov" class="contact__main-input">
-                    </div>
-                    <div class="wrapper-two-input">
-                        <div class="input__wrapper">
-                            <label for="phone" class="contact__main-label">Phone</label>
-                            <input type="tel" id="phone" class="contact__main-input">
-                        </div>
-                        <div class="input__wrapper">
-                            <label for="email" class="contact__main-label">Email</label>
-                            <input type="email" id="email" class="contact__main-input">
-                        </div>
-                    </div>
-                    <div class="contact__main-message">
-                        <p class="contact__main-label">Message</p>
-                        <textarea name="message" cols="80" rows="10" class="contact__main-textarea"></textarea>
-                    </div>
-                    <div class="contact__main-personal">
-                        <input id="personal" type="checkbox" class="contact__main-checkbox" checked>
-                        <label for="personal" class="contact__main-label">By clicking on the button, you consent to the processing of your personal data</label>
-                    </div>
-                    <button type="submit" class="contact__main-submit">Submit</button>
-                </form>
-            </div>
-        </div>
+        @@include('blocks/modal.html')
         <a href="#" class="modal__close"></a>
     </div>
     <script src="js/app.js" defer></script>
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

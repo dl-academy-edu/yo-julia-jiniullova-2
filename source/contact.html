@@ -31,33 +31,7 @@
                 <p class="contact__subtitle contact__subtitle--active">Contact Us</p>
             </div>
             <div class="contact__main">
-                <div class="contact__wrapper">
-                    <form method="post" action="#" class="contact__form">
-                        <div class="contact__one-input">
-                            <label for="name" class="contact__label--name">Name</label>
-                            <input type="text" id="name" placeholder="Ivan Ivanov" class="contact__input">
-                        </div>
-                        <div class="contact__two-input">
-                            <div class="contact__input-wrapper">
-                                <label for="phone" class="contact__label">Phone</label>
-                                <input type="tel" id="phone" class="contact__input">
-                            </div>
-                            <div class="contact__input-wrapper">
-                                <label for="email" class="contact__label">Email</label>
-                                <input type="email" id="email" class="contact__input">
-                            </div>
-                        </div>
-                        <div class="contact__message">
-                            <p class="contact__label">Message</p>
-                            <textarea name="message" cols="80" rows="10" class="contact__textarea"></textarea>
-                        </div>
-                        <div class="contact__personal">
-                            <input id="personal" type="checkbox" class="contact__checkbox" checked>
-                            <label for="personal" class="contact__label">By clicking on the button, you consent to the processing of your personal data</label>
-                        </div>
-                        <button type="submit" class="contact__button">Submit</button>
-                    </form>
-                </div>
+                @@include('blocks/modal.html')
                 <div class="contact__text">
                     <p class="contact__subtitle--normal">Our support team are on-hand to assist with any issues you are experiencing.</p>
                     <p class="contact__subtitle--normal">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>

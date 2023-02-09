@@ -1,5 +1,5 @@
 const popup = document.querySelector('.modal');
-const buttonOpen = document.querySelector('.collection__text-button');
+const buttonOpen = document.querySelector('.collection__button');
 const buttonClose = document.querySelector('.modal__close');
 const overlay = document.querySelector('.modal__overlay');
 
