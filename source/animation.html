@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Animation</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('blocks/header.html')
+      <main>
+          <section class="animation container">
+              <h1 class="animation__title">Animation scene</h1>
+              @@include('blocks/path.html', {
+                "text__one": "Home",
+                "text__two": "Animation"
+              })
+          </section>
+          <section class="anim">
+            <div class="animation__back">
+              <div class="animation__sun">
+                <img src="./img/Clouds_and_sun.png" alt="Clouds_and_sun">
+              </div>
+              <div class="animation__elements">
+                <img src="./img/Others_elements.png" alt="Others_elements" width="1618" height="630">
+              </div>
+              <div class="animation__cars--one">
+                <img src="./img/Car_one.png" alt="Car_one" width="250" height="99">
+              </div>
+              <div class="animation__cars--two">
+                <img src="./img/Car_two.png" alt="Car_two" width="203" height="96">
+              </div>
+              <div class="animation__cars--three">
+                  <img src="./img/Car_three.png" alt="Car_three" width="246" height="64">
+              </div>
+              <div class="animation__cars--four">
+                <img src="./img/Car_four.png" alt="Car_four" width="268" height="126">
+              </div>
+              <div class="animation__lanterns">
+                <img src="./img/Lanterns.png" alt="Lanterns">
+              </div>
+              <div class="animation__taxi">
+                <img src="./img/Car.png" alt="Taxi">
+              </div>
+              <div class="animation__lantern">
+                <img src="./img/Lantern.png" alt="Lanterns">
+              </div>
+              <div class="animation__message--girl">
+                <img src="./img/Message_girl.png" alt="Message_girl">
+              </div>
+              <div class="animation__girl">
+                <img src="./img/girl.png" alt="girl">
+              </div>
+              <div class="animation__suitcases">
+                <img src="./img/Suitcases.png" alt="Suitcases">
+              </div>
+              <div class="animation__message--boy">
+                <img src="./img/Message_boy.png" alt="Message_boy">
+              </div>
+              <div class="animation__boy">
+                <img src="./img/boy.png" alt="boy">
+              </div>
+            </div>
+          </section>
+      </main>
+      @@include('blocks/footer.html')
+  </body>
+  </html>
+  
