@@ -1,6 +1,5 @@
 .anim {
-  display: block;
-  width: 100%
+  margin: 0 auto;
 }
 
 .animation {
@@ -20,14 +19,16 @@
       position: relative;
       overflow: hidden;
       margin-bottom: 70px;
-      max-width: 1600px;
-      margin: 0 auto;
     }
 
     &__sun {
       position: relative;
       left: 80px;
       animation: sun 6s ease-in-out infinite;
+    }
+
+    &__elements {
+      position: relative;
     }
 
     &__lanterns {
