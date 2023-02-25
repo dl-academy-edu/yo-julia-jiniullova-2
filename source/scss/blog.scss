@@ -52,6 +52,7 @@
 
     &:hover,
     &:active {
+      transition: 0.5s;
       text-decoration-line: underline;
     }
   }

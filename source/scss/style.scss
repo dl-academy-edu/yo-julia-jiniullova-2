@@ -94,6 +94,7 @@
     cursor: pointer;
 
     &:hover {
+      transition: 0.5s;
       background: #725F5B;
     }
   }
@@ -210,6 +211,7 @@
 
     &:hover,
     &:active{
+      transition: 0.5s;
       text-decoration: underline;
     }
 
@@ -252,6 +254,7 @@
 
     &:hover,
     &:active {
+      transition: 0.5s;
       opacity: 0.5;
     }
 
@@ -357,6 +360,7 @@
     cursor: pointer;
 
     &:hover {
+      transition: 0.5s;
       opacity: 0.5;
     }
 
@@ -424,10 +428,12 @@
     cursor: pointer;
 
     &:hover {
+      transition: 0.5s;
       background: $color-brown;
     }
 
     &:active {
+      transition: 0.5s;
       background: #CFAF91;
     }
   }
@@ -486,10 +492,12 @@
 }
 
 .modal__close:hover {
+  transition: 0.5s;
   opacity: 0.7;
 }
 
 .modal__close:hover {
+  transition: 0.5s;
   opacity: 0.4;
 }
 

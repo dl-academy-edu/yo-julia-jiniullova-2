@@ -36,6 +36,7 @@
     cursor: pointer;
 
     &:hover {
+      transition: 0.5s;
       opacity: 0.5;
     }
   }
@@ -53,6 +54,7 @@
       color: #A2A2A2;
 
       &:hover {
+        transition: 0.5s;
         color: $color-white;
       }
     }
@@ -69,6 +71,7 @@
       cursor: pointer;
 
       &:hover {
+        transition: 0.5s;
         opacity: 0.5;
       }
     }
@@ -105,6 +108,7 @@
 
     &:hover,
     &:active {
+      transition: 0.5s;
       height: 38px;
       border: 1px solid #FFFDFD;
       border-right: none;
@@ -124,10 +128,12 @@
     cursor: pointer;
 
     &:hover {
+      transition: 0.5s;
       background: $color-brown;
     }
 
     &:active {
+      transition: 0.5s;
       background: #CFAF91;
     }
   }
@@ -150,6 +156,7 @@
 
     &:hover,
     &:active {
+      transition: 0.5s;
       color: $color-brown;
     }
   }
@@ -172,15 +179,18 @@
     }
 
     &:not(:checked) > label:before {
+      transition: 0.5s;
       content: url(/img/icon/star.svg);
     }
 
     &> input:checked ~ label {
+      transition: 0.5s;
       content: url(/img/icon/cleek_star.svg);
     }
 
     &:not(:checked) > label:hover,
     &:not(:checked) > label:hover ~ label {
+      transition: 0.5s;
       content: url(/img/icon/guidance_star.svg);
     }
 
@@ -189,6 +199,7 @@
     & > input:checked ~ label:hover,
     & > input:checked ~ label:hover ~ label,
     & > label:hover ~ input:checked ~ label {
+      transition: 0.5s;
       content: url(/img/icon/guidance_star.svg);
     }
   }

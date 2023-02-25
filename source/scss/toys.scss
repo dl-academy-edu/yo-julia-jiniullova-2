@@ -39,6 +39,7 @@
     }
 
     &--active {
+      transition: 0.5s;
       opacity: 0.5;
     }
   }
@@ -157,6 +158,7 @@
     cursor: pointer;
 
     &:hover {
+      transition: 0.5s;
       text-decoration: underline;
       color: #1E0606;
     }
@@ -199,6 +201,7 @@
   cursor: pointer;
 
   &:hover {
+    transition: 0.5s;
     text-decoration-line: underline;
     color: #1E0606;
   }
@@ -355,18 +358,22 @@
   }
 
   &item:hover &__block {
+    transition: 0.5s;
     opacity: 0.9;
   }
 
   &__item:active &__block {
+    transition: 0.5s;
     opacity: 0.67;
   }
 
   &__item:hover &__block--two {
+    transition: 0.5s;
     opacity: 0.9;
   }
 
   &__item:active &__block--two {
+    transition: 0.5s;
     opacity: 0.67;
   }
 

@@ -13,10 +13,12 @@
     background-repeat: no-repeat;
 
     &:hover {
+      transition: 0.5s;
       background-image: url(/img/icon/arrow_hover.svg);
     }
 
     &:active {
+      transition: 0.5s;
       background-image: url(/img/icon/arrow_active.svg);
     }
   }
@@ -31,10 +33,12 @@
     background-repeat: no-repeat;
 
     &:hover {
+      transition: 0.5s;
       background-image: url(/img/icon/arrow_hover.svg);
     }
 
     &:active {
+      transition: 0.5s;
       background-image: url(/img/icon/arrow_active.svg);
     }
   }
@@ -56,14 +60,17 @@
     cursor: pointer;
 
     &:hover {
+      transition: 0.5s;
       color: #AAAAAA;
     }
 
     &:active {
+      transition: 0.5s;
       color: #C29974;
     }
 
     &--active {
+      transition: 0.5s;
       color: #C29974;
     }
   }

@@ -13,10 +13,12 @@
   padding: 9px 22px;
 
   &:hover {
+    transition: 0.5s;
     background: $color-brown;
   }
 
   &:active{
+    transition: 0.5s;
     background: #CFAF91;
   }
 }

@@ -10,10 +10,12 @@
   cursor: pointer;
 
   &:hover {
+    transition: 0.5s;
     background: $color-brown;
   }
 
   &:active{
+    transition: 0.5s;
     background: #CFAF91;
   }
 }
