@@ -4,6 +4,10 @@
   position: relative;
   margin-bottom: 50px;
 
+  @media (max-width: 1399px) {
+    margin-bottom: 30px;
+  }
+
   &__subtitle {
     font-family: 'Crimson Text';
     font-style: italic;
@@ -12,7 +16,7 @@
     line-height: 26px;
     color: $color-text;
     cursor: pointer;
-    
+
     &--opacity {
       opacity: 0.5;
     }

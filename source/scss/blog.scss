@@ -10,6 +10,11 @@
     text-transform: uppercase;
     color: $color-text;
     margin-bottom: 15px;
+
+    @media (max-width: 1399px) {
+      font-size: 36px;
+      line-height: 44px;
+    }
   }
 
   &__news {
@@ -21,15 +26,27 @@
     flex-wrap: wrap;
     row-gap: 34px;
     column-gap: 20px;
+
+    @media (max-width: 1399px) {
+      row-gap: 30px;
+    }
   }
 
   &__item {
     max-width: 380px;
+
+    @media (max-width: 1399px) {
+      max-width: 314px;
+    }
   }
 
   &__img {
     margin-bottom: 20px;
     cursor: pointer;
+
+    @media (max-width: 1399px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__date {
@@ -39,6 +56,10 @@
     line-height: 22px;
     color: #818181;
     margin-bottom: 7px;
+
+    @media (max-width: 1399px) {
+      margin-bottom: 5px;
+    }
   }
 
   &__news-title {
@@ -49,6 +70,10 @@
     color: $color-text;
     margin-bottom: 15px;
     cursor: pointer;
+
+    @media (max-width: 1399px) {
+      margin-bottom: 10px;
+    }
 
     &:hover,
     &:active {
