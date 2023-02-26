@@ -54,7 +54,13 @@
             <div class="collection__basement">
                 <p class="collection__sub-subtitle">Free (continental) USA shipping on all orders of $100 USD or more!</p>
             </div>
-            <img src="/img/monster.png" alt="monster" class="collection__img">
+            <picture>
+              <source srcset="./img/monster768.png, ./img/monster768-2x.png 2x"
+              media="(max-width: 1399px)">
+              <source srcset="./img/monster375.png, ./img/monster375-2x.png 2x"
+              media="(max-width: 768px)">
+              <img src="/img/monster.png" alt="monster" class="collection__img">
+            </picture>
         </section>
         <section class="category container">
             <div class="category__products">
@@ -63,6 +69,8 @@
                   @@include('blocks/category-list.html', {
                     "text": "APPAREL KIDS",
                     "img": "./img/apparel_kids.png",
+                    "img768": "./img/apparel_kids768.png",
+                    "img375": "./img/apparel_kids375.png",
                     "color": "category__item--green",
                     "padding": "category-item__text--apparel",
                     "href": "#"
@@ -70,6 +78,7 @@
                   @@include('blocks/category-list.html', {
                     "text": "HOLIDAY SHOP",
                     "img": "./img/holiday_shop.png",
+                    "img768": "./img/holiday_shop768.png",
                     "color": "category__item--brown",
                     "padding": "category-item__text--holiday",
                     "href": "#"
@@ -77,6 +86,7 @@
                   @@include('blocks/category-list.html', {
                     "text": "TOYS",
                     "img": "./img/toys.png",
+                    "img768": "./img/toys.png",
                     "color": "category__item--beige",
                     "padding": "category-item__text--toys",
                     "href": "toys.html"
@@ -97,7 +107,13 @@
             </div>
         </section>
         <section class="delivery container">
-            <img class="delivery__img" src="./img/dress.jpg" alt="dress" width="480" height="559">
+          <picture>
+            <source srcset="./img/dress768.jpg, ./img/dress768-2x.jpg 2x"
+              media="(max-width: 1399px)">
+              <source srcset="./img/dress375.jpg, ./img/dress375-2x.jpg 2x"
+              media="(max-width: 768px)">
+            <img class="delivery__img" src="./img/dress.jpg" alt="dress">
+          </picture>
             <div class="delivery__text">
                 <h2 class="delivery__title">Delivery</h2>
                 <p class="delivery__subtitle delivery__subtitle--weight">Delivery</p>
@@ -114,16 +130,32 @@
             <h2 class="awards__title">Awards</h2>
             <ul class="awards__list undotted">
                 <li class="awards__item">
+                  <picture>
+                    <source srcset="./img/mail768.png, ./img/mail768-2x.png 2x"
+                    media="(max-width: 1399px)">
                     <img src="./img/mail.png" alt="mail" width="193" height="60" class="awards__img">
+                  </picture>
                 </li>
                 <li class="awards__item">
+                  <picture>
+                    <source srcset="./img/apple768.png, ./img/apple768-2x.png 2x"
+                    media="(max-width: 1399px)">
                     <img src="./img/apple.png" alt="apple" width="179" height="61" class="awards__img">
+                  </picture>
                 </li>
                 <li class="awards__item">
+                  <picture>
+                    <source srcset="./img/eltex768.png, ./img/eltex768-2x.png 2x"
+                    media="(max-width: 1399px)">
                     <img src="./img/eltex.png" alt="eltex" width="216" height="46" class="awards__img">
+                  </picture>
                 </li>
                 <li class="awards__item">
+                  <picture>
+                    <source srcset="./img/owox768.png, ./img/owox768-2x.png 2x"
+                    media="(max-width: 1399px)">
                     <img src="./img/owox.png" alt="owox" width="211" height="40" class="awards__img">
+                  </picture>
                 </li>
             </ul>
         </section>

@@ -1,10 +1,21 @@
 .header {
-  padding-top: 50px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
 
+  @media (max-width: 1399px) {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    max-height: 32px;
+  }
+
   &__logo {
     margin-right: 59px;
+
+    @media (max-width: 1399px) {
+      margin-right: 0;
+      max-height: 32px;
+    }
 
     &:hover {
       transition: 0.5s;
@@ -19,6 +30,11 @@
 
   &__nav {
     margin-right: auto;
+
+    @media (max-width: 1399px) {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   &__list {
@@ -29,6 +45,28 @@
   &__item {
     display: flex;
     align-items: center;
+
+    @media (max-width: 1399px) {
+      display: none;
+    }
+
+    &--loupe {
+      display: flex;
+    }
+
+    &--menu {
+      display: none;
+
+      @media (max-width: 1399px) {
+        display: block;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #1E0606;
+      }
+    }
   }
 
   &-item__link {
@@ -39,6 +77,8 @@
     text-transform: uppercase;
     color: $color-text;
     margin-right: 20px;
+    border: none;
+    background: none;
 
     &:hover {
       transition: 0.5s;
@@ -62,5 +102,9 @@
     background-image: url(../img/icon/loupe.svg);
     width: 18px;
     height: 18px;
+
+    @media (max-width: 1399px) {
+      margin: 0;
+    }
   }
 }

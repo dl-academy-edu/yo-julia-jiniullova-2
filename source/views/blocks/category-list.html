@@ -1,6 +1,12 @@
 <li class="category__item @@color @@margin">
   <a href="@@href" class="category-item__link">
       <p class="category-item__text @@padding">@@text</p>
-      <img src="@@img" alt="apparel kids" width="280" height="270" class="category-item__img">
+      <picture>
+        <source srcset="@@img768"
+        media="(max-width: 1399px)">
+        <source srcset="@@img375"
+        media="(max-width: 768px)">
+        <img src="@@img" alt="apparel kids" width="280" height="270" class="category-item__img">
+      </picture>
   </a>
 </li>

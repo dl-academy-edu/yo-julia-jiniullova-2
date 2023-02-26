@@ -1,12 +1,15 @@
 <header class="header container">
   <a href="/" class="header__link">
+    <picture>
+      <source srcset="./img/icon/logo768.svg"
+              media="(max-width: 1399px)">
+              <source srcset="./img/icon/logo375.svg"
+              media="(max-width: 768px)">
       <img src="./img/icon/logo.svg" alt="logo" class="header__logo">
+    </picture>
   </a>
   <nav class="header__nav">
       <ul class="header__list undotted">
-          <li class="header__item">
-              <a href="blog.html" class="header-item__link">Blog</a>
-          </li>
           <li class="header__item">
               <a href="catalog.html" class="header-item__link">Catalog</a>
           </li>
@@ -14,7 +17,7 @@
               <a href="#" class="header-item__link">About Us</a>
           </li>
           <li class="header__item">
-              <a href="#" class="header-item__link">Blog</a>
+            <a href="blog.html" class="header-item__link">Blog</a>
           </li>
           <li class="header__item">
               <a href="animation.html" class="header-item__link">Animation</a>
@@ -25,10 +28,13 @@
           <li class="header__item">
               <a href="#" class="header-item__link">Grid</a>
           </li>
+          <li class="header__item header__item--menu">
+            <button class="header-item__link">Menu</button>
+        </li>
       </ul>
   </nav>
   <ul class="header__list undotted">
-      <li class="header__item">
+      <li class="header__item header__item--loupe">
           <a href="#" class="header-item__link header-item__icon"></a>
       </li>
       <li class="header__item">

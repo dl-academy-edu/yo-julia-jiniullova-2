@@ -56,10 +56,20 @@
   margin-bottom: 90px;
   margin-top: 129px;
 
+  @media (max-width: 1399px) {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
   &__img {
     position: absolute;
     top: -87px;
     right: 100px;
+
+    @media (max-width: 1399px) {
+      right: 8px;
+      top: 86px;
+    }
   }
 
   &__wrapper {
@@ -70,6 +80,12 @@
     margin-top: 17px;
     margin-left: 31px;
     margin-right: 44px;
+
+    @media (max-width: 1399px) {
+      margin-top: 17px;
+      margin-left: 0;
+      margin-right: 11px;
+    }
   }
 
   &__num {
@@ -78,6 +94,18 @@
     font-size: 60px;
     line-height: 73px;
     color: rgba(30, 6, 6, 0.05);
+
+    @media (max-width: 1399px) {
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 59px;
+    }
+  }
+
+  &__list {
+    @media (max-width: 1399px) {
+      margin: 0;
+    }
   }
 
   &__item {
@@ -93,6 +121,10 @@
     background: #D6CAC2;
     cursor: pointer;
 
+    @media (max-width: 1399px) {
+      max-width: 27px;
+    }
+
     &:hover {
       transition: 0.5s;
       background: #725F5B;
@@ -102,6 +134,11 @@
   &__text {
     margin-top: 91px;
     margin-bottom: 89px;
+
+    @media (max-width: 1399px) {
+      margin-top: 76px;
+      margin-bottom: 102px;
+    }
   }
 
   &__title {
@@ -147,8 +184,16 @@
 .category {
   margin-bottom: 90px;
 
+  @media (max-width: 1399px) {
+    margin-bottom: 60px;
+  }
+
   &__products {
     margin-bottom: 33px;
+
+    @media (max-width: 1399px) {
+      margin-bottom: 27px;
+    }
   }
 
   &__title {
@@ -159,11 +204,18 @@
     text-transform: uppercase;
     color: $color-text;
     margin-bottom: 30px;
+
+    @media (max-width: 1399px) {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 24px;
+    }
   }
 
   &__list {
     display: flex;
     column-gap: 20px;
+    overflow: hidden;
   }
 
   &__item {
@@ -173,6 +225,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1399px) {
+      min-width: 258px;
+      max-height: 249px;
+    }
 
     &:nth-child(4) {
       margin-right: 0;
@@ -209,6 +266,10 @@
     color: $color-white;
     top: 103px;
 
+    @media (max-width: 1399px) {
+      top: 95px;
+    }
+
     &:hover,
     &:active{
       transition: 0.5s;
@@ -219,6 +280,10 @@
       left: 75px;
       width: 129px;
       text-align: center;
+
+      @media (max-width: 1399px) {
+        left: 58px;
+      }
     }
 
     &--holiday {
@@ -280,6 +345,11 @@
     font-size: 16px;
     line-height: 22px;
     color: $color-text;
+
+    @media (max-width: 1399px) {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 }
 
@@ -287,9 +357,18 @@
   display: flex;
   margin-bottom: 90px;
 
+  @media (max-width: 1399px) {
+    gap: 56px;
+    margin-bottom: 60px;
+  }
+
   &__img {
     margin-right: 120px;
     background-color: rgba(112, 187, 220, 0.2);
+
+    @media (max-width: 1399px) {
+      margin-right: 0;
+    }
   }
 
   &__title {
@@ -301,6 +380,11 @@
     color: $color-text;
     margin-bottom: 4px;
     margin-top: 30px;
+
+    @media (max-width: 1399px) {
+      font-size: 36px;
+      line-height: 44px;
+    }
   }
 
   &__subtitle {
@@ -312,8 +396,18 @@
     color: $color-text;
     margin-bottom: 22px;
 
+    @media (max-width: 1399px) {
+      margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 31px;
+    }
+
     &--margin {
       margin-bottom: 30px;
+
+      @media (max-width: 1399px) {
+        margin-bottom: 20px;
+      }
     }
 
     &--weight {
@@ -325,6 +419,12 @@
       background: rgba(112, 187, 220, 0.2);
       margin-bottom: 11px;
       margin-left: -60px;
+
+      @media (max-width: 1399px) {
+        padding-left: 20px;
+        margin-left: -20px;
+        margin-bottom: 8px;
+      }
     }
   }
 
@@ -337,14 +437,29 @@
     color: $color-text;
     margin-bottom: 15px;
 
+    @media (max-width: 1399px) {
+      max-width: 312px;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
     &--margin {
       margin-bottom: 35px;
+
+      @media (max-width: 1399px) {
+        margin-bottom: 30px;
+      }
     }
   }
 }
 
 .awards {
   margin-bottom: 114px;
+  width: 100%;
+
+  @media (max-width: 1399px) {
+    margin-bottom: 104px;
+  }
 
   &__title {
     display: none;
@@ -353,6 +468,10 @@
   &__list {
     display: flex;
     align-items: flex-end;
+
+    @media (max-width: 1399px) {
+      gap: 70px;
+    }
   }
 
   &__item {
@@ -368,11 +487,21 @@
       margin: 0;
     }
   }
+
+  &__img {
+    @media (max-width: 1399px) {
+      max-height: 33px;
+    }
+  }
 }
 
 .wrapper {
   display: flex;
   margin-bottom: 155px;
+
+  @media (max-width: 1399px) {
+    margin-bottom: 125px;
+  }
 }
 
 .design {
@@ -381,8 +510,18 @@
   background: #E1F0F7;
   margin-right: 57px;
 
+  @media (max-width: 1399px) {
+    min-width: 314px;
+    min-height: 302px;
+    margin-right: 20px;
+  }
+
   &__wrapper {
     margin-left: 30px;
+
+    @media (max-width: 1399px) {
+      margin-left: 15px;
+    }
   }
 
   &__title {
@@ -393,6 +532,13 @@
     text-transform: uppercase;
     color: $color-text;
     margin-top: -26px;
+
+    @media (max-width: 1399px) {
+      font-size: 30px;
+      line-height: 37px;
+      margin-top: -18px;
+      margin-bottom: 14px;
+    }
   }
 
   &__subtitle {
@@ -404,6 +550,10 @@
     color: $color-text;
     margin-bottom: 10px;
     margin-top: 10px;
+
+    @media (max-width: 1399px) {
+      margin-top: 0;
+    }
   }
 
   &__description {
@@ -414,6 +564,10 @@
     color: $color-text;
     margin-bottom: 29px;
     width: 483px;
+
+    @media (max-width: 1399px) {
+      max-width: 260px;
+    }
   }
 
   &__link {
@@ -444,8 +598,17 @@
   height: 209px;
   background: #E1F0F7;
 
+  @media (max-width: 1399px) {
+    min-width: 314px;
+    min-height: 272px;
+  }
+
   &__wrapper {
     margin-left: 30px;
+
+    @media (max-width: 1399px) {
+      margin-left: 15px;
+    }
   }
 
   &__title {
@@ -456,6 +619,12 @@
     text-transform: uppercase;
     color: $color-text;
     margin-top: -26px;
+
+    @media (max-width: 1399px) {
+      font-size: 30px;
+      line-height: 37px;
+      margin-top: -19px;
+    }
   }
 
   &__subtitle {
@@ -467,6 +636,17 @@
     margin-bottom: 30px;
     width: 483px;
     margin-top: 20px;
+
+    @media (max-width: 1399px) {
+      max-width: 260px;
+    }
+  }
+
+  &__map {
+    @media (max-width: 1399px) {
+      width: 284px;
+      height: 151px;
+    }
   }
 }
 
