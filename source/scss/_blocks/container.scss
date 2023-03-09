@@ -6,4 +6,9 @@
     max-width: 648px;
     margin: 0 auto;
   }
+
+  @media (max-width: 767px) {
+    max-width: 375px;
+    margin: 0 auto;
+  }
 }
