@@ -9,12 +9,21 @@
     max-height: 32px;
   }
 
+  @media (max-width: 767px) {
+    margin-top: 25px;
+    margin-bottom: 26px;
+  }
+
   &__logo {
     margin-right: 59px;
 
     @media (max-width: 1399px) {
       margin-right: 0;
       max-height: 32px;
+    }
+
+    @media (max-width: 767px) {
+      max-height: 22px;
     }
 
     &:hover {
@@ -35,11 +44,16 @@
       margin-right: auto;
       margin-left: auto;
     }
+
+    @media (max-width: 767px) {
+      max-height: 20px;
+    }
   }
 
   &__list {
     display: flex;
     align-items: center;
+    margin: 0;
   }
 
   &__item {
@@ -105,6 +119,13 @@
 
     @media (max-width: 1399px) {
       margin: 0;
+    }
+
+    @media (max-width: 767px) {
+      background-image: url(../img/icon/loupe375.svg);
+      background-repeat: no-repeat;
+      width: 13px;
+      height: 13px;
     }
   }
 }
