@@ -9,6 +9,12 @@
   color: $color-white;
   cursor: pointer;
 
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 8px 20px;
+  }
+
   &:hover {
     transition: 0.5s;
     background: $color-brown;

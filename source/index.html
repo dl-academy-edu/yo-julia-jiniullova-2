@@ -25,7 +25,7 @@
     @@include('blocks/header.html')
     <main class="main">
         <section class="collection container">
-            <div class="collection__wrapper">
+            <div class="collection__wrapper container__mobile">
                 <div class="collection__switch">
                     <span class="collection__num">01</span>
                     <ul class="collection__list undotted">
@@ -63,7 +63,7 @@
             </picture>
         </section>
         <section class="category container">
-            <div class="category__products">
+            <div class="category__products container__mobile">
                 <h2 class="category__title">Category Products</h2>
                 <ul class="category__list undotted">
                   @@include('blocks/category-list.html', {
@@ -79,6 +79,7 @@
                     "text": "HOLIDAY SHOP",
                     "img": "./img/holiday_shop.png",
                     "img768": "./img/holiday_shop768.png",
+                    "img375": "./img/holiday_shop768.png",
                     "color": "category__item--brown",
                     "padding": "category-item__text--holiday",
                     "href": "#"
@@ -87,6 +88,7 @@
                     "text": "TOYS",
                     "img": "./img/toys.png",
                     "img768": "./img/toys768.png",
+                    "img375": "./img/toys768.png",
                     "color": "category__item--beige",
                     "padding": "category-item__text--toys",
                     "href": "toys.html"
@@ -95,27 +97,28 @@
                     "text": "ACCESSORIES",
                     "img": "./img/accessories.png",
                     "img768": "./img/accessories.png",
+                    "img375": "./img/accessories.png",
                     "color": "category__item--blue",
                     "padding": "category-item__text--accessories",
                     "href": "#"
                   })
                 </ul>
             </div>
-            <div class="category__switch">
+            <div class="category__switch container__mobile">
                 <button class="category__button category__button--left"></button>
                 <button class="category__button category__button--right"></button>
                 <p class="category__description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
             </div>
         </section>
         <section class="delivery container">
-          <picture>
+          <picture class="container__mobile">
+            <source srcset="./img/dress375.jpg, ./img/dress375-2x.jpg 2x"
+              media="(max-width: 768px)">
             <source srcset="./img/dress768.jpg, ./img/dress768-2x.jpg 2x"
               media="(max-width: 1399px)">
-              <source srcset="./img/dress375.jpg, ./img/dress375-2x.jpg 2x"
-              media="(max-width: 768px)">
             <img class="delivery__img" src="./img/dress.jpg" alt="dress">
           </picture>
-            <div class="delivery__text">
+            <div class="delivery__text container__mobile">
                 <h2 class="delivery__title">Delivery</h2>
                 <p class="delivery__subtitle delivery__subtitle--weight">Delivery</p>
                 <p class="delivery__subtitle">Guarantee</p>
@@ -129,7 +132,7 @@
         </section>
         <section class="awards container">
             <h2 class="awards__title">Awards</h2>
-            <ul class="awards__list undotted">
+            <ul class="awards__list undotted container__mobile">
                 <li class="awards__item">
                   <picture>
                     <source srcset="./img/mail768.png, ./img/mail768-2x.png 2x"
@@ -163,7 +166,7 @@
     </main>
     <div class="wrapper container">
         <section class="design">
-            <div class="design__wrapper">
+            <div class="design__wrapper container__mobile">
                 <h2 class="design__title">Design Life Kids</h2>
                 <p class="design__subtitle">About Us</p>
                 <p class="design__description">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
@@ -173,7 +176,7 @@
             </div>
         </section>
         <article class="contacts">
-            <div class="contacts__wrapper">
+            <div class="contacts__wrapper container__mobile">
                 <h2 class="contacts__title">Contacts</h2>
                 <p class="contacts__subtitle">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                 <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.58601728222!2d-122.4236554651123!3d37.776304100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809eb08736cb%3A0xd0499d3f418e942d!2zNzcgRmVsbCBTdCwgU2FuIEZyYW5jaXNjbywgQ0EgOTQxMDIsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1668937738385!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
