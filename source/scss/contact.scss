@@ -6,6 +6,11 @@
     margin-top: 70px;
   }
 
+  @media (max-width: 767px) {
+    margin-top: 46px;
+    margin-bottom: 50px;
+  }
+
   &__title {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -21,6 +26,11 @@
       margin-top: 0;
       margin-bottom: 10px;
     }
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
   }
 
   &__main {
@@ -31,6 +41,10 @@
       flex-direction: column-reverse;
       align-items: center;
       gap: 45px;
+    }
+
+    @media (max-width: 767px) {
+      gap: 25px;
     }
   }
 
@@ -199,6 +213,13 @@
     @media (max-width: 1399px) {
       margin-top: 15px;
     }
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 15px;
+      margin-top: 0px;
+    }
   }
 
   &__subtitle--caps {
@@ -208,5 +229,9 @@
     line-height: 34px;
     text-transform: uppercase;
     color: #C29974;
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
   }
 }

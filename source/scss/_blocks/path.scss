@@ -8,6 +8,11 @@
     margin-bottom: 30px;
   }
 
+  @media (max-width: 767px) {
+    gap: 34px;
+    margin-bottom: 25px;
+  }
+
   &__subtitle {
     font-family: 'Crimson Text';
     font-style: italic;
@@ -17,6 +22,11 @@
     color: $color-text;
     cursor: pointer;
 
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
     &--opacity {
       opacity: 0.5;
     }
@@ -25,6 +35,10 @@
       content: url(/img/icon/vector.svg);
       position: absolute;
       left: 62px;
+
+      @media (max-width: 767px) {
+        left: 48px;
+      }
     }
   }
 }

@@ -24,7 +24,7 @@
 <body>
   @@include('blocks/header.html')
     <main>
-        <section class="contact container">
+        <section class="contact container container__mobile">
             <h1 class="contact__title">Contact&ensp;Us</h1>
             @@include('blocks/path.html', {
               "text__one": "Home",
@@ -32,7 +32,7 @@
             })
             <div class="contact__main">
                 @@include('blocks/modal.html')
-                <div class="contact__text">
+                <div class="contact__text container__mobile">
                     <p class="contact__subtitle--normal">Our support team are on-hand to assist with any issues you are experiencing.</p>
                     <p class="contact__subtitle--normal">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
                     <p class="contact__subtitle--caps">An expert is waiting to help you!</p>
