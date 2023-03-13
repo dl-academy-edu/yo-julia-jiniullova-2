@@ -46,6 +46,10 @@
   &__numbers {
     display: flex;
     gap: 64px;
+
+    @media (max-width: 767px) {
+      gap: 39px;
+    }
   }
 
   &__num {
