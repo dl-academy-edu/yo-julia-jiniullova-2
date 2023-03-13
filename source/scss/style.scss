@@ -838,6 +838,11 @@
     right: 8%;
   }
 
+  @media (max-width: 767px) {
+    top: 103px;
+    right: 5%;
+  }
+
   &__close {
     background-image: url(/img/close.png);
     background-repeat: no-repeat;

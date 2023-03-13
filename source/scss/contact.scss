@@ -43,6 +43,10 @@
     @media (max-width: 1399px) {
       max-width: 648px;
     }
+
+    @media (max-width: 767px) {
+      max-width: 335px;
+    }
   }
 
   &__form {
@@ -50,6 +54,10 @@
 
     @media (max-width: 1399px) {
       padding: 41px 56px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 25px 25px;
     }
   }
 
@@ -65,6 +73,10 @@
     @media (max-width: 1399px) {
       width: 258px;
     }
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   }
 
   &__label {
@@ -74,6 +86,11 @@
       line-height: 19px;
       color: #1E0606;
       margin-bottom: 6px;
+
+      @media (max-width: 767px) {
+        margin-bottom: 5px;
+        font-size: 13px;
+      }
   }
 
   &__input {
@@ -88,12 +105,25 @@
     color: #1E0606;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media (max-width: 767px) {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 14px;
+      line-height: 16px;
+      min-height: 38px;
+      margin-bottom: 15px;
+    }
   }
 
   &__two-input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   &__textarea {
@@ -107,10 +137,19 @@
     @media (max-width: 1399px) {
       width: 536px;
     }
+
+    @media (max-width: 767px) {
+      width: 285px;
+      margin-bottom: 8px;
+    }
   }
 
   &__personal {
     margin-bottom: 13px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 6px;
+    }
   }
 
   &__checkbox {
@@ -127,11 +166,18 @@
       width: 19px;
       height: 19px;
       background-image: url(/img/icon/checkbox.svg);
+      background-repeat: no-repeat;
       margin-right: 15px;
+
+      @media (max-width: 767px) {
+        margin-right: 13px;
+        width: 38px;
+      }
     }
 
     &:checked + label::before {
       background-image: url(/img/icon/checkbox_check.svg);
+      background-repeat: no-repeat;
     }
   }
 
