@@ -24,7 +24,7 @@
 <body>
   @@include('blocks/header.html')
     <main>
-        <section class="catalog container">
+        <section class="catalog container container__mobile">
             <h1 class="catalog__title">catalog Products</h1>
             @@include('blocks/path.html', {
               "text__one": "Home",
@@ -44,6 +44,7 @@
                 "text": "HOLIDAY SHOP",
                 "img": "./img/holiday_shop.png",
                 "img768": "./img/holiday_shop768(2).png",
+                "img375": "./img/holiday_shop375.png",
                 "color": "category__item--brown",
                 "padding": "catalog__text--holiday",
                 "href": "#"
@@ -52,6 +53,7 @@
                 "text": "TOYS",
                 "img": "./img/toys.png",
                 "img768": "./img/toys768.png",
+                "img375": "./img/toys375.png",
                 "color": "category__item--beige",
                 "padding": "catalog__text--toys",
                 "href": "toys.html"
@@ -60,6 +62,7 @@
                 "text": "ACCESSORIES",
                 "img": "./img/accessories.png",
                 "img768": "./img/accessories768.png",
+                "img375": "./img/accessories375.png",
                 "color": "category__item--blue",
                 "padding": "catalog__text--accessories",
                 "href": "#",
@@ -69,6 +72,7 @@
                 "text": "SALE",
                 "img": "./img/sale.png",
                 "img768": "./img/sale768.png",
+                "img375": "./img/sale375.png",
                 "color": "category__item--beige",
                 "padding": "catalog__text--sale",
                 "href": "#"
@@ -77,13 +81,14 @@
                 "text": "APPAREL ADULTS",
                 "img": "/img/apparel_adults.png",
                 "img768": "./img/adults768.png",
+                "img375": "./img/adults375.png",
                 "color": "category__item--beige",
                 "padding": "catalog__text--adults",
                 "href": "#"
               })
             </ul>
         </section>
-        <section class="description container">
+        <section class="description container container__mobile">
             <h1 class="description__title">Product Description</h1>
             <p class="description__subtitle">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
             <p class="description__subtitle">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>

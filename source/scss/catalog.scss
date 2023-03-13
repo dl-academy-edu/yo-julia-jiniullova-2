@@ -2,6 +2,11 @@
   margin-top: 60px;
   margin-bottom: 55px;
 
+  @media (max-width: 767px) {
+    margin-top: 46px;
+    margin-bottom: 30px;
+  }
+
   &__title {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -15,6 +20,12 @@
       font-size: 36px;
       line-height: 44px;
     }
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 10px;
+    }
   }
 
   &__list {
@@ -26,6 +37,10 @@
     @media (max-width: 1399px) {
       gap: 20px;
     }
+
+    @media (max-width: 1399px) {
+      gap: 15px;
+    }
   }
 
   &__item {
@@ -34,6 +49,10 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    @media (max-width: 767px) {
+      width: 159px;
+    }
 
     &--margin:nth-child(4) {
       margin-left: 200px;
@@ -60,6 +79,12 @@
       line-height: 29px;
     }
 
+    @media (max-width: 767px) {
+      top: 60px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
     &:hover,
     &:active{
       transition: 0.5s;
@@ -81,6 +106,10 @@
       @media (max-width: 1399px) {
         left: 40px;
       }
+
+      @media (max-width: 767px) {
+        left: 17px;
+      }
     }
 
     &--holiday {
@@ -90,6 +119,11 @@
 
       @media (max-width: 1399px) {
         left: 25px;
+      }
+
+      @media (max-width: 767px) {
+        width: 120px;
+        left: 19px;
       }
     }
 
@@ -101,6 +135,11 @@
         top: 87px;
         left: 65px;
       }
+
+      @media (max-width: 767px) {
+        top: 70px;
+        left: 55px;
+      }
     }
 
     &--accessories {
@@ -110,6 +149,10 @@
       @media (max-width: 1399px) {
         top: 86px;
         left: 12px;
+      }
+
+      @media (max-width: 767px) {
+        top: 69px;
       }
     }
 
@@ -121,6 +164,11 @@
         top: 87px;
         left: 70px;
       }
+
+      @media (max-width: 767px) {
+        top: 69px;
+        left: 55px;
+      }
     }
 
     &--adults {
@@ -131,6 +179,10 @@
       @media (max-width: 1399px) {
         left: 23px;
       }
+
+      @media (max-width: 767px) {
+        left: 5px;
+      }
     }
   }
 }
@@ -140,6 +192,10 @@
   flex-direction: column;
   gap: 15px;
   margin-bottom: 55px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+  }
 
   &__title {
     font-family: 'Montserrat';
@@ -156,6 +212,12 @@
       margin-left: 0;
       font-size: 36px;
       line-height: 44px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 0;
     }
   }
 
