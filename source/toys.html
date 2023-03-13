@@ -24,7 +24,7 @@
 <body>
   @@include('blocks/header.html')
     <main>
-        <section class="kids container">
+        <section class="kids container container__mobile">
             <h1 class="kids__title">Toy for kids</h1>
             <div class="kids__path">
                 <p class="kids__subtitle kids__subtitle--home">Home</p>
@@ -34,7 +34,7 @@
         </section>
         <section class="filter">
             <h2 class="filter__title">Filter</h2>
-            <div class="filter__wrapper container">
+            <div class="filter__wrapper container container__mobile">
                 <div class="cost">
                     <label class="cost__label">Cost</label>
                     <div class="cost__wrapper">
@@ -93,43 +93,55 @@
                 </div>
             </div>
         </section>
-        <section class="toys container">
+        <section class="toys container container__mobile">
             <h2 class="toys__title">Toy for kids</h2>
             <div class="toys__catalog">
                 <ul class="toys__list undotted">
                   @@include('blocks/toys-list.html', {
                     "img": "/img/pillow.jpg",
                     "img768": "/img/pillow768.jpg",
+                    "img375": "/img/pillow375.jpg",
+                    "alt": "pillow",
                     "desc": "SHARKY BEAN BAG CHAIR COVER",
                     "price": "$60.00 USD"
                   })
                   @@include('blocks/toys-list.html', {
                     "img": "/img/frames.jpg",
                     "img768": "/img/frames768.jpg",
+                    "img375": "/img/frames375.jpg",
+                    "alt": "frames",
                     "desc": "BRASS DECO FRAMES",
                     "price": "$66.00 USD"
                   })
                   @@include('blocks/toys-list.html', {
                     "img": "/img/apron.jpg",
                     "img768": "/img/apron768.jpg",
+                    "img375": "/img/apron375.jpg",
+                    "alt": "apron",
                     "desc": "CIBO FULL APRON",
                     "price": "$60.00 USD"
                   })
                   @@include('blocks/toys-list.html', {
                     "img": "/img/machine.jpg",
                     "img768": "/img/machine768.jpg",
+                    "img375": "/img/machine375.jpg",
+                    "alt": "machine",
                     "desc": "SHARKY BEAN BAG CHAIR COVER",
                     "price": "$56.00 USD"
                   })
                   @@include('blocks/toys-list.html', {
                     "img": "/img/candle.jpg",
                     "img768": "/img/candle768.jpg",
+                    "img375": "/img/candle375.jpg",
+                    "alt": "candle",
                     "desc": "BRASS DECO FRAMES",
                     "price": "$29.00 USD"
                   })
                   @@include('blocks/toys-list.html', {
                     "img": "/img/lamp.jpg",
                     "img768": "/img/lamp768.jpg",
+                    "img375": "/img/lamp375.jpg",
+                    "alt": "lamp",
                     "desc": "TANGLE SPINNING TEA LIGHT",
                     "price": "$56.00 USD"
                   })

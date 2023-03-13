@@ -7,6 +7,11 @@
     margin-bottom: 30px;
   }
 
+  @media (max-width: 767px) {
+    margin-top: 46px;
+    margin-bottom: 20px;
+  }
+
   &__title {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -21,12 +26,21 @@
       line-height: 44px;
       margin-bottom: 10px;
     }
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
   }
 
   &__path {
     display: flex;
     gap: 49px;
     position: relative;
+
+    @media (max-width: 767px) {
+      gap: 34px;
+    }
   }
 
   &__subtitle {
@@ -37,16 +51,29 @@
     line-height: 26px;
     color: #1E0606;
 
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
     &--home::after {
       content: url(/img/icon/vector.svg);
       position: absolute;
       left: 62px;
+
+      @media (max-width: 767px) {
+        left: 48px;
+      }
     }
 
     &--catalog::after {
       content: url(/img/icon/vector.svg);
       position: absolute;
       left: 167px;
+
+      @media (max-width: 767px) {
+        left: 127px;
+      }
     }
 
     &--active {
@@ -67,6 +94,11 @@
     margin-bottom: 50px;
   }
 
+  @media (max-width: 767px) {
+    height: 439px;
+    margin-bottom: 40px;
+  }
+
   &__title {
     display: none;
   }
@@ -79,6 +111,10 @@
       flex-wrap: wrap;
       padding-top: 30px;
       row-gap: 20px;
+    }
+
+    @media (max-width: 1399px) {
+      padding-top: 25px;
     }
   }
 
@@ -111,6 +147,11 @@
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 
   &__wrapper {
@@ -163,6 +204,11 @@
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 }
 
@@ -171,6 +217,10 @@
 
   @media (max-width: 1399px) {
     margin-right: 90px;
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 100px;
   }
 
   &__fieldset {
@@ -184,6 +234,12 @@
     flex-direction: column;
     gap: 15px;
     padding: 0;
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 19px;
+      gap: 10px;
+    }
   }
 
   &__label {
@@ -227,6 +283,11 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .delivery__label {
@@ -276,6 +337,11 @@
     color: #1E0606;
     border: 0;
     padding: 0;
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 
   &__title {
@@ -314,6 +380,12 @@
     justify-content: center;
     flex-direction: column;
 
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 19px;
+      height: 29px;
+    }
+
     &:hover {
       background: #EDDEEB;
         color: #877379;
@@ -327,6 +399,11 @@
   @media (max-width: 1399px) {
     margin-left: 145px;
     margin-top: 33px;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 120px;
+    margin-top: 0;
   }
 }
 
@@ -347,6 +424,10 @@
     @media (max-width: 1399px) {
       margin-bottom: 50px;
     }
+
+    @media (max-width: 767px) {
+      margin-bottom: 35px;
+    }
   }
 
   &__list {
@@ -359,6 +440,11 @@
       row-gap: 30px;
       column-gap: 20px;
     }
+
+    @media (max-width: 767px) {
+      row-gap: 25px;
+      column-gap: 15px;
+    }
   }
 
   &__item {
@@ -367,6 +453,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    @media (max-width: 767px) {
+      width: 160px;
+      justify-content: end;
+    }
   }
 
   &__block {
@@ -380,6 +471,11 @@
     justify-content: center;
     flex-direction: column;
     opacity: 0;
+
+    @media (max-width: 767px) {
+      width: 160px;
+      height: 160px;
+    }
 
     &--two {
       background-color: #E5EAF8;
@@ -410,6 +506,10 @@
 
     @media (max-width: 1399px) {
       margin-bottom: 15px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
     }
   }
 
@@ -446,6 +546,10 @@
       line-height: 16px;
       margin-bottom: 5px;
     }
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__price {
@@ -458,6 +562,11 @@
     @media (max-width: 1399px) {
       font-size: 14px;
       line-height: 19px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+      line-height: 16px;
     }
   }
 }
