@@ -1,0 +1,44 @@
+.path {
+  display: flex;
+  gap: 49px;
+  position: relative;
+  margin-bottom: 50px;
+
+  @media (max-width: 1399px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 767px) {
+    gap: 34px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: $color-text;
+    cursor: pointer;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    &--opacity {
+      opacity: 0.5;
+    }
+
+    &--arrow::after {
+      content: url(/img/icon/vector.svg);
+      position: absolute;
+      left: 62px;
+
+      @media (max-width: 767px) {
+        left: 48px;
+      }
+    }
+  }
+}

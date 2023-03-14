@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Toys</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+<body>
+  @@include('blocks/header.html')
+    <main>
+        <section class="kids container container__mobile">
+            <h1 class="kids__title">Toy for kids</h1>
+            <div class="kids__path">
+                <p class="kids__subtitle kids__subtitle--home">Home</p>
+                <p class="kids__subtitle kids__subtitle--catalog">Catalog</p>
+                <p class="kids__subtitle kids__subtitle--active">Toys</p>
+            </div>
+        </section>
+        <section class="filter">
+            <h2 class="filter__title">Filter</h2>
+            <div class="filter__wrapper container container__mobile">
+                <div class="cost">
+                    <label class="cost__label">Cost</label>
+                    <div class="cost__wrapper">
+                        <input type="range" min="0" max="500" value="100" class="cost__input">
+                    </div>
+                    <div class="cost__numbers">
+                        <span class="cost__num">0</span>
+                        <span class="cost__num">500</span>
+                    </div>
+                </div>
+                <div class="color">
+                    <fieldset class="color__fieldset">
+                        <p class="color__title">Color</p>
+                            <input type="checkbox" id="black" checked class="color__input">
+                            <label for="black" class="color__label">Black</label>
+                            <input type="checkbox" id="blue" class="color__input">
+                            <label for="blue" class="color__label">Blue</label>
+                            <input type="checkbox" id="green" class="color__input">
+                            <label for="green" class="color__label">Green</label>
+                            <input type="checkbox" id="white" class="color__input">
+                            <label for="white" class="color__label">White</label>
+                    </fieldset>
+                </div>
+                <div class="filter__delivery">
+                    <fieldset class="delivery__fieldset">
+                        <p class="filter__delivery-title">Delivery</p>
+                        <input type="radio" name="radio__delivery" id="free-shipping" class="delivery__input">
+                        <label for="free-shipping" class="delivery__label">Free shipping</label>
+                        <input type="radio" name="radio__delivery" id="fast-shipping" checked class="delivery__input">
+                        <label for="fast-shipping" class="delivery__label">Fast shipping</label>
+                    </fieldset>
+                </div>
+                <div class="amount">
+                    <fieldset class="amount__fieldset">
+                        <p class="amount__title">Amount</p>
+                        <div class="amount__wrapper">
+                            <div class="amount__item">
+                                <input type="radio" id="0-5" name="radio__amount" checked class="amount__input">
+                                <label for="0-5" class="amount__label">0-5</label>
+                            </div>
+                            <div class="amount__item">
+                                <input type="radio" id="10-20" name="radio__amount" class="amount__input">
+                                <label for="10-20" class="amount__label">10-20</label>
+                            </div>
+                            <div class="amount__item">
+                                <input type="radio" id="20-50" name="radio__amount" class="amount__input">
+                                <label for="20-50" class="amount__label">20-50</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="apply">
+                  @@include('blocks/button.html', {
+                    "text": "Apply"
+                  })
+                </div>
+            </div>
+        </section>
+        <section class="toys container container__mobile">
+            <h2 class="toys__title">Toy for kids</h2>
+            <div class="toys__catalog">
+                <ul class="toys__list undotted">
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/pillow.jpg",
+                    "img768": "/img/pillow768.jpg",
+                    "img375": "/img/pillow375.jpg",
+                    "alt": "pillow",
+                    "desc": "SHARKY BEAN BAG CHAIR COVER",
+                    "price": "$60.00 USD"
+                  })
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/frames.jpg",
+                    "img768": "/img/frames768.jpg",
+                    "img375": "/img/frames375.jpg",
+                    "alt": "frames",
+                    "desc": "BRASS DECO FRAMES",
+                    "price": "$66.00 USD"
+                  })
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/apron.jpg",
+                    "img768": "/img/apron768.jpg",
+                    "img375": "/img/apron375.jpg",
+                    "alt": "apron",
+                    "desc": "CIBO FULL APRON",
+                    "price": "$60.00 USD"
+                  })
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/machine.jpg",
+                    "img768": "/img/machine768.jpg",
+                    "img375": "/img/machine375.jpg",
+                    "alt": "machine",
+                    "desc": "SHARKY BEAN BAG CHAIR COVER",
+                    "price": "$56.00 USD"
+                  })
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/candle.jpg",
+                    "img768": "/img/candle768.jpg",
+                    "img375": "/img/candle375.jpg",
+                    "alt": "candle",
+                    "desc": "BRASS DECO FRAMES",
+                    "price": "$29.00 USD"
+                  })
+                  @@include('blocks/toys-list.html', {
+                    "img": "/img/lamp.jpg",
+                    "img768": "/img/lamp768.jpg",
+                    "img375": "/img/lamp375.jpg",
+                    "alt": "lamp",
+                    "desc": "TANGLE SPINNING TEA LIGHT",
+                    "price": "$56.00 USD"
+                  })
+                </ul>
+            </div>
+            @@include('blocks/pages.html')
+        </section>
+    </main>
+    @@include('blocks/footer.html')
+</body>
+</html>

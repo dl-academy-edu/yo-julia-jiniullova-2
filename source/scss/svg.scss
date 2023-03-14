@@ -1,0 +1,169 @@
+.svg {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  &__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-bottom: 10px;
+  }
+
+  &__sun {
+    animation: sun 5s ease-in-out infinite;
+
+    @keyframes sun {
+      0% {
+        cx: 263px;
+        cy: 235px;
+        fill:#656D78;
+      }
+      50% {
+        cx: 293px;
+        cy: 215px;
+        fill: #FFCE54;
+      }
+      100% {
+        cx: 263px;
+        cy: 235px;
+        fill:#656D78;
+      }
+    }
+  }
+
+  &__mountain1 {
+    animation: mountain1 5s ease-in-out infinite;
+
+    @keyframes mountain1 {
+      0% {
+        fill:#545C66;
+      }
+      50% {
+        fill: #707375;
+      }
+      100% {
+        fill:#545C66;
+      }
+    }
+  }
+
+  &__mountain2 {
+    animation: mountain2 5s ease-in-out infinite;
+
+    @keyframes mountain2 {
+      0% {
+        fill:#656D78;
+      }
+      50% {
+        fill: #808081;
+      }
+      100% {
+        fill:#656D78;
+      }
+    }
+  }
+
+  &__code1 {
+    animation: code1 5s ease-in-out infinite;
+
+    @keyframes code1 {
+      0% {
+        x: 40px;
+      }
+      50% {
+        x: 27px;
+      }
+      100% {
+        x: 40px;
+      }
+    }
+  }
+
+  &__code2 {
+    animation: code2 5s ease-in-out infinite;
+
+    @keyframes code2 {
+      0% {
+        x: 53px;
+      }
+      50% {
+        x: 40px;
+      }
+      100% {
+        x: 53px;
+      }
+    }
+  }
+
+  &__code3 {
+    animation: code3 5s ease-in-out infinite;
+
+    @keyframes code3 {
+      0% {
+        x: 80px;
+      }
+      50% {
+        x: 40px;
+      }
+      100% {
+        x: 80px;
+      }
+    }
+  }
+
+  &__code4 {
+    animation: code4 5s ease-in-out infinite;
+
+    @keyframes code4 {
+      0% {
+        x: 67px;
+      }
+      50% {
+        x: 30px;
+      }
+      100% {
+        x: 67px;
+      }
+    }
+  }
+
+  &__code5 {
+    animation: code5 5s ease-in-out infinite;
+
+    @keyframes code5 {
+      0% {
+        x: 53px;
+      }
+      50% {
+        x: 25px;
+      }
+      100% {
+        x: 53px;
+      }
+    }
+  }
+
+  &__code6 {
+    animation: code6 5s ease-in-out infinite;
+
+    @keyframes code6 {
+      0% {
+        x: 228px;
+      }
+      50% {
+        x: 300px;
+      }
+      100% {
+        x: 228px;
+      }
+    }
+  }
+}
+
+
+
+
+

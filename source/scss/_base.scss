@@ -12,7 +12,7 @@ html {
 
 html,
 body {
-  background-color: $color-bg;
+  background-color: $color-white;
   color: $color-text;
   font-family: $font-base-family;
   height: 100%;
@@ -20,4 +20,31 @@ body {
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-text;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.undotted {
+  list-style-type: none;
 }

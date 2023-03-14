@@ -1,0 +1,81 @@
+.pages {
+  display: flex;
+  justify-content: space-between;
+
+  &__btn--left {
+    background-image: url(/img/icon/arrow_inaction.svg);
+    border: 0;
+    width: 18px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+
+    &:hover {
+      transition: 0.5s;
+      background-image: url(/img/icon/arrow_hover.svg);
+    }
+
+    &:active {
+      transition: 0.5s;
+      background-image: url(/img/icon/arrow_active.svg);
+    }
+  }
+
+  &__btn--right {
+    background-image: url(/img/icon/arrow_inaction.svg);
+    border: 0;
+    width: 18px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+
+    &:hover {
+      transition: 0.5s;
+      background-image: url(/img/icon/arrow_hover.svg);
+    }
+
+    &:active {
+      transition: 0.5s;
+      background-image: url(/img/icon/arrow_active.svg);
+    }
+  }
+
+  &__numbers {
+    display: flex;
+    gap: 64px;
+
+    @media (max-width: 767px) {
+      gap: 39px;
+    }
+  }
+
+  &__num {
+    border: 0;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #1E0606;
+    background: none;
+    cursor: pointer;
+
+    &:hover {
+      transition: 0.5s;
+      color: #AAAAAA;
+    }
+
+    &:active {
+      transition: 0.5s;
+      color: #C29974;
+    }
+
+    &--active {
+      transition: 0.5s;
+      color: #C29974;
+    }
+  }
+}

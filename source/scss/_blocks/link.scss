@@ -1,0 +1,27 @@
+.link {
+  padding: 9px 22px;
+  background: #000000;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $color-white;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 8px 20px;
+  }
+
+  &:hover {
+    transition: 0.5s;
+    background: $color-brown;
+  }
+
+  &:active{
+    transition: 0.5s;
+    background: #CFAF91;
+  }
+}

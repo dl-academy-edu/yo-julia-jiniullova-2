@@ -1,0 +1,171 @@
+.anim {
+  margin: 0 auto;
+}
+
+.animation {
+    margin-top: 60px;
+
+    &__title {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      text-transform: uppercase;
+      color: #1E0606;
+      margin-bottom: 10px;
+    }
+
+    &__back {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 70px;
+    }
+
+    &__sun {
+      position: relative;
+      left: 80px;
+      animation: sun 6s ease-in-out infinite;
+    }
+
+    &__elements {
+      position: relative;
+    }
+
+    &__lanterns {
+      position: absolute;
+      top: 172px;
+      right: 0;
+    }
+
+    &__cars--one {
+      position: absolute;
+      top: 55.07%;
+      animation: one 6s ease-in-out infinite;
+      animation-delay: 1s;
+    }
+
+    &__cars--two {
+      position: absolute;
+      top: 55.03%;
+      animation: two 8s ease-in-out infinite;
+      animation-delay: 0.5s;
+    }
+
+    &__cars--three {
+      position: absolute;
+      top: 58.92%;
+      animation: three 4s ease-in-out infinite;
+    }
+
+    &__cars--four {
+      position: absolute;
+      top: 51.15%;
+      animation: four 10s ease-in-out infinite;
+    }
+
+    &__lantern {
+      position: absolute;
+      bottom: 50px;
+      left: 1115px;
+    }
+
+    &__girl {
+      position: absolute;
+      left: 182px;
+      top: 455px;
+    }
+
+    &__suitcases {
+      position: absolute;
+      left: 172px;
+      top: 628px;
+    }
+
+    &__boy {
+      position: absolute;
+      left: 288px;
+      top: 330px;
+    }
+
+    &__taxi {
+      position: absolute;
+      top: 400px;
+      right: -887px;
+      animation: taxi 5s ease-in-out infinite;
+    }
+
+    &__message--girl {
+      position: absolute;
+      left: 92px;
+      top: 350px;
+      display: none;
+    }
+
+    &__message--boy {
+      position: absolute;
+      left: 278px;
+      top: 280px;
+      z-index: 3;
+      display: none;
+    }
+}
+
+@keyframes sun {
+  0% {
+    left: 80px;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 80px;
+  }
+}
+
+@keyframes one {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes two {
+  0% {
+    left: -40%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes three {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes four {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes taxi {
+  0% {
+    right: -887px;
+  }
+  50% {
+    right: 500px;
+  }
+  100% {
+    right: 3000px;
+  }
+}

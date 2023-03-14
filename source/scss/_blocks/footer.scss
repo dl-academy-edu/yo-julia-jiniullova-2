@@ -1,10 +1,283 @@
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-*/
 .footer {
-  background-color: #151515;
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
-  height: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #434343;
+
+  @media (max-width: 1399px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  &__wrapper {
+    display: flex;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__navigation,
+  &__information {
+    margin-right: 20px;
+
+    @media (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+
+    &--border {
+      border-bottom: 1px solid $color-gray;
+      padding-bottom: 23px;
+      margin-bottom: 28px;
+      width: 380px;
+
+      @media (max-width: 1399px) {
+        width: 203px;
+      }
+
+      @media (max-width: 767px) {
+        width: 335px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-item__link {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+      transition: 0.5s;
+      opacity: 0.5;
+    }
+  }
+
+  &__item {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-white;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+    &--transparent {
+      color: #A2A2A2;
+
+      &:hover {
+        transition: 0.5s;
+        color: $color-white;
+      }
+    }
+
+    &--circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: $color-gray;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      @media (max-width: 767px) {
+        width: 28px;
+        height: 28px;
+        margin-right: 15px;
+      }
+
+      &:hover {
+        transition: 0.5s;
+        opacity: 0.5;
+      }
+    }
+
+    &--margin:nth-child(1) {
+      margin-right: 150px;
+
+      @media (max-width: 1399px) {
+        margin-right: 100px;
+      }
+
+      @media (max-width: 767px) {
+        margin-right: 0;
+      }
+    }
+
+    &--margin:nth-child(2) {
+      margin-right: 109px;
+
+      @media (max-width: 1399px) {
+        margin-right: 43px;
+      }
+    }
+  }
+
+  &__email {
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    width: 299px;
+    height: 40px;
+    border: 0;
+    background-color: $color-gray;
+    padding-left: 15px;
+    cursor: pointer;
+
+    @media (max-width: 1399px) {
+      width: 121px;
+    }
+
+    @media (max-width: 767px) {
+      width: 263px;
+    }
+
+    &::placeholder {
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #EBEBEB;
+    }
+
+    &:hover,
+    &:active {
+      transition: 0.5s;
+      height: 38px;
+      border: 1px solid #FFFDFD;
+      border-right: none;
+    }
+  }
+
+  &__button {
+    padding: 9px 22px;
+    background: #000000;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    border: 0;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+      transition: 0.5s;
+      background: $color-brown;
+    }
+
+    &:active {
+      transition: 0.5s;
+      background: #CFAF91;
+    }
+  }
+
+  &__list {
+
+    @media (max-width: 1399px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 35px;
+    }
+
+    &--flex {
+      display: flex;
+    }
+
+    &--grid {
+      @media (max-width: 767px) {
+        display: grid;
+        grid-template-columns: 158px 147px;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid $color-gray;
+    padding-top: 23px;
+    margin-top: 13px;
+
+    @media (max-width: 1399px) {
+      padding-top: 17px;
+    }
+  }
+
+  &__rating {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+
+    &:hover,
+    &:active {
+      transition: 0.5s;
+      color: $color-brown;
+    }
+  }
+
+  &__rating-area {
+    overflow: hidden;
+    height: 17px;
+    margin-left: 28px;
+
+    &:not(:checked) > input {
+      display: none;
+    }
+
+    &:not(:checked) > label {
+      float: right;
+      width: 14px;
+      height: 21.6px;
+      margin-right: 6px;
+      cursor: pointer;
+    }
+
+    &:not(:checked) > label:before {
+      transition: 0.5s;
+      content: url(/img/icon/star.svg);
+    }
+
+    &> input:checked ~ label {
+      transition: 0.5s;
+      content: url(/img/icon/cleek_star.svg);
+    }
+
+    &:not(:checked) > label:hover,
+    &:not(:checked) > label:hover ~ label {
+      transition: 0.5s;
+      content: url(/img/icon/guidance_star.svg);
+    }
+
+    &> input:checked + label:hover,
+    & > input:checked + label:hover ~ label,
+    & > input:checked ~ label:hover,
+    & > input:checked ~ label:hover ~ label,
+    & > label:hover ~ input:checked ~ label {
+      transition: 0.5s;
+      content: url(/img/icon/guidance_star.svg);
+    }
+  }
 }
