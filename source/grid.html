@@ -24,12 +24,84 @@
 <body>
   @@include('blocks/header.html')
   <main>
-    <section class="grid container container__mobile">
-        <h1 class="grid__title">Grid</h1>
+    <section class="apex container container__mobile">
+        <h1 class="apex__title">Grid</h1>
         @@include('blocks/path.html', {
           "text__one": "Home",
           "text__two": "Grid"
         })
+    </section>
+    <section class="grid">
+      <div class="grid__wrapper">
+        <div class="grid__box box1">
+          <div class="box1__wrapper">
+            <p class="box1__tel">IPHONE 6S</p>
+            <p class="box1__title">3D Touch. 12MP photos. 4K video. One powerful phone</p>
+            <p class="box1__subtitle">Learn more or visit an Apple Store today</p>
+          </div>
+          <picture>
+            <img src="../img/telephone.png" alt="telephone" class="box1__img">
+          </picture>
+        </div>
+        <div class="grid__box box2">
+          <p class="box2__learn">LEARN MORE</p>
+          <p class="box2__title">How to Use Rotary Evaporator in Chemical Labs</p>
+          <button class="box2__btn">Download now</button>
+        </div>
+        <div class="grid__box box3">
+          <picture>
+            <img src="../img/keyboard.png" alt="keyboard" class="box3__img">
+          </picture>
+          <p class="box3__title">Our Brand New Keyboard</p>
+          <a class="box3__link">LEARN ›</a>
+        </div>
+        <div class="grid__box box4">
+          <div class="box4__wrapper1">
+            <p class="box4__subtitle">IMAC.RETINA</p>
+            <p class="box4__title">Hardly a month passes these days where</p>
+            <picture>
+              <img src="../img/televisor.png" alt="televisor" class="box4__img">
+            </picture>
+          </div>
+          <div class="box4__wrapper2">
+            <p class="box4__description">Apple may be experimenting in the virtual reality space. The company has been granted a patent for a head-mounted virtual reality device that would use the iPhone screen as the display.</p>
+            <button class="box4__btn">DOWNLOAD NOW ›</button>
+          </div>
+        </div>
+        <div class="grid__box box5">
+          <picture>
+            <img src="../img/meet.png" alt="meet" class="box5__img">
+          </picture>
+          <p class="box5__title">iCloud</p>
+          <p class="box5__description">With iCloud, you always have the latest versions of your most important things — like documents, apps, notes, and contacts — on whatever device you’re using.</p>
+          <a class="box5__link">LEARN MORE</a>
+        </div>
+        <div class="grid__box box6">
+          <p class="box6__title">Much MuchBetter Experience</p>
+          <picture>
+            <img src="../img/laptop.png" alt="laptop" class="box6__img">
+          </picture>
+        </div>
+        <div class="grid__box box7">
+          <picture>
+            <img src="../img/game.png" alt="game" class="box7__img">
+          </picture>
+          <p class="box7__title">Games ourpasion</p>
+          <button class="box7__btn">LEARN ›</button>
+        </div>
+        <div class="grid__box box8">
+          <picture>
+            <img src="../img/inst.png" alt="icon" class="box8__img">
+          </picture>
+          <a class="box8__link">Follow me ›</a>
+        </div>
+        <div class="grid__box box9">
+          <picture>
+            <img src="../img/display.png" alt="televisor" class="box9__img">
+          </picture>
+          <p class="box9__title">More than just a display,  it’s a vision</p>
+        </div>
+      </div>
     </section>
 </main>
   @@include('blocks/footer.html')
