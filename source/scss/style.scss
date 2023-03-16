@@ -57,6 +57,9 @@
   position: absolute;
   top: 17px;
   left: 133px;
+  @media (max-width: 1399px) {
+    display: none;
+  }
 }
 
 .collection {
