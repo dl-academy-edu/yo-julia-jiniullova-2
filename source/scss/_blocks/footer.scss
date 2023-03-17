@@ -158,6 +158,11 @@
       font-size: 16px;
       line-height: 22px;
       color: #EBEBEB;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 19px;
+      }
     }
 
     &:hover,
@@ -199,7 +204,7 @@
     }
 
     @media (max-width: 767px) {
-      margin-bottom: 35px;
+      margin-bottom: 19px;
     }
 
     &--flex {
@@ -212,6 +217,10 @@
         grid-template-columns: 158px 147px;
         justify-content: space-between;
       }
+    }
+
+    &--margin {
+      margin-bottom: 40px;
     }
   }
 
