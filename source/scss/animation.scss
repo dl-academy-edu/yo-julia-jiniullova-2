@@ -23,8 +23,8 @@
 
     &__sun {
       position: relative;
-      left: 80px;
-      animation: sun 6s ease-in-out infinite;
+      left: 5%;
+      animation: clouds 5s ease-in-out infinite;
     }
 
     &__elements {
@@ -75,30 +75,53 @@
       top: 455px;
     }
 
+    &__girl--hand {
+      position: absolute;
+      left: 209px;
+      top: 568px;
+      animation: girl_hand 12s ease-in-out infinite;
+      animation-delay: 1s;
+    }
+
     &__suitcases {
       position: absolute;
       left: 172px;
       top: 628px;
+      z-index: 2;
     }
 
     &__boy {
       position: absolute;
       left: 288px;
-      top: 330px;
+      top: 369px;
+      z-index: 1;
+    }
+
+    &__boy--hand {
+      position: absolute;
+      left: 288px;
+      top: 331px;
+      transform-origin: 10px 119px;
+      transform: rotateZ(150deg);
+      animation: boy_hand 12s ease-in-out infinite;
+      animation-delay: 4s;
     }
 
     &__taxi {
       position: absolute;
       top: 400px;
       right: -887px;
-      animation: taxi 5s ease-in-out infinite;
+      animation: taxi 11s ease-in-out infinite;
+      animation-delay: 3s;
     }
 
     &__message--girl {
       position: absolute;
       left: 92px;
       top: 350px;
-      display: none;
+      opacity: 0;
+      animation: message_girl 12s ease-in-out infinite;
+      animation-delay: 1s;
     }
 
     &__message--boy {
@@ -106,19 +129,41 @@
       left: 278px;
       top: 280px;
       z-index: 3;
-      display: none;
+      opacity: 0;
+      animation: message_boy 12s ease-in-out infinite;
+      animation-delay: 4s;
+    }
+
+    &__message--boy2 {
+      position: absolute;
+      left: 278px;
+      top: 280px;
+      z-index: 3;
+      opacity: 0;
+      animation: message_boy2 11s ease-in-out infinite;
+      animation-delay: 10s;
+    }
+
+    &__message--taxi {
+      position: absolute;
+      left: 950px;
+      top: 345px;
+      z-index: 3;
+      opacity: 0;
+      animation: message 9s ease-in-out infinite;
+      animation-delay: 9s;
     }
 }
 
-@keyframes sun {
+@keyframes clouds {
   0% {
-    left: 80px;
+    left: 5%;
   }
   50% {
-    left: 100px;
+    left: 10%
   }
   100% {
-    left: 80px;
+    left: 5%;
   }
 }
 
@@ -162,10 +207,114 @@
   0% {
     right: -887px;
   }
-  50% {
-    right: 500px;
+  20% {
+    right: -380px;
+  }
+  60% {
+    right: -40px;
+  }
+  75% {
+    right: -40px;
   }
   100% {
     right: 3000px;
+  }
+}
+
+@keyframes girl_hand {
+  0% {
+    transform-origin: 10px 10px;
+    transform: rotateZ(0);
+  }
+  10% {
+    transform-origin: 10px 10px;
+    transform: rotateZ(-50deg);
+  }
+  30% {
+    transform-origin: 10px 10px;
+    transform: rotateZ(0);
+  }
+  100% {
+    transform-origin: 10px 10px;
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes message_girl {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes message_boy {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes boy_hand {
+  0% {
+    transform-origin: 10px 119px;
+    transform: rotateZ(150deg);
+  }
+  10% {
+    transform-origin: 10px 119px;
+    transform: rotateZ(2deg);
+  }
+  30% {
+    transform-origin: 10px 119px;
+    transform: rotateZ(150deg);
+  }
+  100% {
+    transform-origin: 10px 119px;
+    transform: rotateZ(150deg);
+  }
+}
+
+@keyframes message {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes message_boy2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  21% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
