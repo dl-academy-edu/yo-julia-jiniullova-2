@@ -79,7 +79,7 @@
       position: absolute;
       left: 209px;
       top: 568px;
-      animation: girl_hand 12s ease-in-out infinite;
+      animation: girl_hand 10s ease-in-out infinite;
       animation-delay: 1s;
     }
 
@@ -103,7 +103,7 @@
       top: 331px;
       transform-origin: 10px 119px;
       transform: rotateZ(150deg);
-      animation: boy_hand 12s ease-in-out infinite;
+      animation: boy_hand 10s ease-in-out infinite;
       animation-delay: 4s;
     }
 
@@ -111,7 +111,7 @@
       position: absolute;
       top: 400px;
       right: -887px;
-      animation: taxi 11s ease-in-out infinite;
+      animation: taxi 10s ease-in-out infinite;
       animation-delay: 3s;
     }
 
@@ -120,7 +120,7 @@
       left: 92px;
       top: 350px;
       opacity: 0;
-      animation: message_girl 12s ease-in-out infinite;
+      animation: message_girl 10s ease-in-out infinite;
       animation-delay: 1s;
     }
 
@@ -130,7 +130,7 @@
       top: 280px;
       z-index: 3;
       opacity: 0;
-      animation: message_boy 12s ease-in-out infinite;
+      animation: message_boy 10s ease-in-out infinite;
       animation-delay: 4s;
     }
 
@@ -140,7 +140,7 @@
       top: 280px;
       z-index: 3;
       opacity: 0;
-      animation: message_boy2 11s ease-in-out infinite;
+      animation: message_boy2 10s ease-in-out infinite;
       animation-delay: 10s;
     }
 
@@ -308,10 +308,10 @@
   0% {
     opacity: 0;
   }
-  20% {
+  10% {
     opacity: 1;
   }
-  21% {
+  11% {
     opacity: 0;
   }
   100% {
